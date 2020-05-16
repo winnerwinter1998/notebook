@@ -1,0 +1,786 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.1.2, mkdocs-material-5.1.7"><title>示例程序 - Notes</title><link rel=stylesheet href=../../assets/stylesheets/main.4c7052ca.min.css><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback"><style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style></head> <body dir=ltr> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#_1 class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid" aria-label=Header> <a href=../.. title=Notes class="md-header-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> <label class="md-header-nav__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header-nav__title data-md-component=header-title> <div class=md-header-nav__ellipsis> <span class="md-header-nav__topic md-ellipsis"> Notes </span> <span class="md-header-nav__topic md-ellipsis"> 示例程序 </span> </div> </div> <label class="md-header-nav__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query data-md-state=active> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <button type=reset class="md-search__icon md-icon" aria-label=Clear data-md-component=search-reset tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class="md-tabs__link md-tabs__link--active"> Home </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title=Notes class="md-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> Notes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. title=Home class=md-nav__link> Home </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#_2 class=md-nav__link> 示例一 </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> 示例二 </a> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> 示例三 输入输出示例 </a> </li> <li class=md-nav__item> <a href=#new-make class=md-nav__link> 示例四 理解 new 和 make 操作 </a> </li> <li class=md-nav__item> <a href=#_5 class=md-nav__link> 示例五 函数多返回值 </a> </li> <li class=md-nav__item> <a href=#_6 class=md-nav__link> 示例六 函数传值不会改变外部变量值 </a> </li> <li class=md-nav__item> <a href=#_7 class=md-nav__link> 示例七 函数传指针会改变外部变量值 </a> </li> <li class=md-nav__item> <a href=#defer class=md-nav__link> 示例八 defer 语句 </a> </li> <li class=md-nav__item> <a href=#_8 class=md-nav__link> 示例九 函数作为值、类型 </a> </li> <li class=md-nav__item> <a href=#panic-recover class=md-nav__link> 示例十 使用 panic 和 recover </a> </li> <li class=md-nav__item> <a href=#struct class=md-nav__link> 示例十一 struct 的用法 </a> </li> <li class=md-nav__item> <a href=#switch class=md-nav__link> 示例十二 switch 测试 </a> </li> <li class=md-nav__item> <a href=#channel class=md-nav__link> 示例十三 无缓冲 channel </a> </li> <li class=md-nav__item> <a href=#channel_1 class=md-nav__link> 示例十四 有缓存的 channel </a> </li> <li class=md-nav__item> <a href=#nethttp-web class=md-nav__link> 示例十五 net/http 包建立一个 Web 服务器 </a> </li> <li class=md-nav__item> <a href=#_9 class=md-nav__link> 示例十六 数学意义不严格的函数式编程 </a> </li> <li class=md-nav__item> <a href=#_10 class=md-nav__link> 示例十七 基于管道的随机数生成器 </a> </li> <li class=md-nav__item> <a href=#_11 class=md-nav__link> 示例十八 空数组用于管道的同步操作 </a> </li> <li class=md-nav__item> <a href=#_12 class=md-nav__link> 示例十九 可变参数其实是切片类型 </a> </li> <li class=md-nav__item> <a href=#_13 class=md-nav__link> 示例二十 空接口类型变参是否被解包会导致不同的结果 </a> </li> <li class=md-nav__item> <a href=#_14 class=md-nav__link> 示例二十一 闭包可能导致隐含问题 </a> </li> <li class=md-nav__item> <a href=#- class=md-nav__link> 示例二十二 生产者-消费者模型 </a> </li> <li class=md-nav__item> <a href=#_15 class=md-nav__link> 示例二十五 发布订阅模型 </a> </li> <li class=md-nav__item> <a href=#syncwaitgroup class=md-nav__link> 示例二十四 使用sync.WaitGroup等待一组事件 </a> </li> <li class=md-nav__item> <a href=#_16 class=md-nav__link> 示例二十五 切片代码示例 </a> <nav class=md-nav aria-label="示例二十五 切片代码示例"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#_17 class=md-nav__link> 切片内存技巧 </a> </li> <li class=md-nav__item> <a href=#_18 class=md-nav__link> 避免切片内存泄漏 </a> </li> <li class=md-nav__item> <a href=#_19 class=md-nav__link> 切片类型强制转换 </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#_20 class=md-nav__link> 示例二十六 素数筛 </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1 id=_1>示例程序<a class=headerlink href=#_1 title="Permanent link">&para;</a></h1> <h2 id=_2>示例一<a class=headerlink href=#_2 title="Permanent link">&para;</a></h2> <p>通过 <code>http</code> 服务向每个访问的客户端打印中文的 “你好，世界！” 和当前的时间信息。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+    <span class=s>&quot;time&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Please visit http://127.0.0.1:12345/&quot;</span><span class=p>)</span>
+    <span class=nx>http</span><span class=p>.</span><span class=nx>HandleFunc</span><span class=p>(</span><span class=s>&quot;/&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>req</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>s</span> <span class=o>:=</span> <span class=nx>fmt</span><span class=p>.</span><span class=nx>Sprintf</span><span class=p>(</span><span class=s>&quot;你好, 世界! -- Time: %s&quot;</span><span class=p>,</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Now</span><span class=p>().</span><span class=nx>String</span><span class=p>())</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;%v\n&quot;</span><span class=p>,</span> <span class=nx>s</span><span class=p>)</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%v\n&quot;</span><span class=p>,</span> <span class=nx>s</span><span class=p>)</span>
+    <span class=p>})</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;:12345&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>);</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenAndServe: &quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>通过 Go 语言标准库自带的 <code>net/http</code> 包构造了一个独立运行的 http 服务。其中 <code>http.HandleFunc("/", ...)</code> 针对 <code>/</code> 根路径请求注册了响应处理函数。在响应处理函数中，我们依然使用 <code>fmt.Fprintf</code> 格式化输出函数实现了通过 http 协议向请求的客户端打印格式化的字符串，同时通过标准库的日志包在服务器端也打印相关字符串。最后通过 <code>http.ListenAndServe</code> 函数调用来启动 http 服务</p> <h2 id=_3>示例二<a class=headerlink href=#_3 title="Permanent link">&para;</a></h2> <p>Google 在 <a href=http://chart.apis.google.com/ >http://chart.apis.google.com</a> 上提供了一个将表单数据自动转换为图表的服务。不过，该服务很难交互， 因为你需要将数据作为查询放到 URL 中。此程序为一种数据格式提供了更好的的接口： 给定一小段文本，它将调用图表服务器来生成二维码（QR 码），这是一种编码文本的点格矩阵。 该图像可被你的手机摄像头捕获，并解释为一个字符串，比如 URL， 这样就免去了你在狭小的手机键盘上键入 URL 的麻烦。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;flag&quot;</span>
+    <span class=s>&quot;html/template&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>var</span> <span class=nx>addr</span> <span class=p>=</span> <span class=nx>flag</span><span class=p>.</span><span class=nx>String</span><span class=p>(</span><span class=s>&quot;addr&quot;</span><span class=p>,</span> <span class=s>&quot;:1718&quot;</span><span class=p>,</span> <span class=s>&quot;http service address&quot;</span><span class=p>)</span> <span class=c1>// Q=17, R=18</span>
+
+<span class=kd>var</span> <span class=nx>templ</span> <span class=p>=</span> <span class=nx>template</span><span class=p>.</span><span class=nx>Must</span><span class=p>(</span><span class=nx>template</span><span class=p>.</span><span class=nx>New</span><span class=p>(</span><span class=s>&quot;qr&quot;</span><span class=p>).</span><span class=nx>Parse</span><span class=p>(</span><span class=nx>templateStr</span><span class=p>))</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>flag</span><span class=p>.</span><span class=nx>Parse</span><span class=p>()</span>
+    <span class=nx>http</span><span class=p>.</span><span class=nx>Handle</span><span class=p>(</span><span class=s>&quot;/&quot;</span><span class=p>,</span> <span class=nx>http</span><span class=p>.</span><span class=nx>HandlerFunc</span><span class=p>(</span><span class=nx>QR</span><span class=p>))</span>
+    <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=o>*</span><span class=nx>addr</span><span class=p>,</span> <span class=kc>nil</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenAndServe:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>QR</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>req</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>templ</span><span class=p>.</span><span class=nx>Execute</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=nx>req</span><span class=p>.</span><span class=nx>FormValue</span><span class=p>(</span><span class=s>&quot;s&quot;</span><span class=p>))</span>
+<span class=p>}</span>
+
+<span class=kd>const</span> <span class=nx>templateStr</span> <span class=p>=</span> <span class=s>`</span>
+<span class=s>&lt;html&gt;</span>
+<span class=s>&lt;head&gt;</span>
+<span class=s>&lt;title&gt;QR Link Generator&lt;/title&gt;</span>
+<span class=s>&lt;/head&gt;</span>
+<span class=s>&lt;body&gt;</span>
+<span class=s>{{if .}}</span>
+<span class=s>&lt;img src=&quot;http://chart.apis.google.com/chart?chs=300x300&amp;cht=qr&amp;choe=UTF-8&amp;chl={{.}}&quot; /&gt;</span>
+<span class=s>&lt;br&gt;</span>
+<span class=s>{{.}}</span>
+<span class=s>&lt;br&gt;</span>
+<span class=s>&lt;br&gt;</span>
+<span class=s>{{end}}</span>
+<span class=s>&lt;form action=&quot;/&quot; name=f method=&quot;GET&quot;&gt;&lt;input maxLength=1024 size=70</span>
+<span class=s>name=s value=&quot;&quot; title=&quot;Text to QR Encode&quot;&gt;&lt;input type=submit</span>
+<span class=s>value=&quot;Show QR&quot; name=qr&gt;</span>
+<span class=s>&lt;/form&gt;</span>
+<span class=s>&lt;/body&gt;</span>
+<span class=s>&lt;/html&gt;</span>
+<span class=s>`</span>
+</code></pre></div> <p>我们通过一个标志为服务器设置了默认端口。 模板变量 <code>templ</code> 正式有趣的地方。它构建的 HTML 模版将会被服务器执行并显示在页面中。 稍后我们将详细讨论。</p> <p><code>main</code> 函数解析了参数标志并使用我们讨论过的机制将 <code>QR</code> 函数绑定到服务器的根路径。然后调用 <code>http.ListenAndServe</code> 启动服务器；它将在服务器运行时处于阻塞状态。</p> <p><code>QR</code> 仅接受包含表单数据的请求，并为表单值 <code>s</code> 中的数据执行模板。</p> <p>模板包 <code>html/template</code> 非常强大；该程序只是浅尝辄止。 本质上，它通过在运行时将数据项中提取的元素（在这里是表单值）传给 <code>templ.Execute</code> 执行因而重写了 HTML 文本。 在模板文本（<code>templateStr</code>）中，双大括号界定的文本表示模板的动作。 从 <code>{{if .}}</code> 到 <code>{{end}}</code> 的代码段仅在当前数据项（这里是点 <code>.</code>）的值非空时才会执行。 也就是说，当字符串为空时，此部分模板段会被忽略。</p> <p>其中两段 <code>{{.}}</code> 表示要将数据显示在模板中 （即将查询字符串显示在 Web 页面上）。HTML 模板包将自动对文本进行转义， 因此文本的显示是安全的。</p> <p>余下的模板字符串只是页面加载时将要显示的 HTML。</p> <h2 id=_4>示例三 输入输出示例<a class=headerlink href=#_4 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=c1>// greeting.go</span>
+<span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+<span class=s>&quot;fmt&quot;</span>
+<span class=s>&quot;strings&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+<span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Please enter your name.&quot;</span><span class=p>)</span>
+<span class=kd>var</span> <span class=nx>name</span> <span class=kt>string</span>
+<span class=nx>fmt</span><span class=p>.</span><span class=nx>Scanln</span><span class=p>(</span><span class=o>&amp;</span><span class=nx>name</span><span class=p>)</span>
+<span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Hi, %s! I&#39;m Go!&quot;</span><span class=p>,</span> <span class=nx>name</span><span class=p>)</span>
+<span class=nx>name</span> <span class=p>=</span> <span class=nx>strings</span><span class=p>.</span><span class=nx>TrimSpace</span><span class=p>(</span><span class=nx>name</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=new-make>示例四 理解 new 和 make 操作<a class=headerlink href=#new-make title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;unsafe&quot;</span>
+<span class=p>)</span>
+
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>one</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>([]</span><span class=kt>int</span><span class=p>,</span> <span class=mi>4</span><span class=p>)</span>
+    <span class=nx>two</span> <span class=o>:=</span> <span class=nb>new</span><span class=p>([]</span><span class=kt>int</span><span class=p>)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%T %T\n&quot;</span><span class=p>,</span> <span class=nx>one</span><span class=p>,</span> <span class=nx>two</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%d %d %d\n&quot;</span><span class=p>,</span> <span class=nx>unsafe</span><span class=p>.</span><span class=nx>Sizeof</span><span class=p>(</span><span class=nx>one</span><span class=p>),</span> <span class=nx>unsafe</span><span class=p>.</span><span class=nx>Sizeof</span><span class=p>(</span><span class=nx>two</span><span class=p>),</span> <span class=nx>unsafe</span><span class=p>.</span><span class=nx>Sizeof</span><span class=p>(</span><span class=o>*</span><span class=nx>two</span><span class=p>))</span>
+<span class=p>}</span>
+<span class=c1>// 输出如下：</span>
+<span class=c1>// []int *[]int</span>
+<span class=c1>// 12 4 12</span>
+</code></pre></div> <p>在 one 中 addr、len、capacity 各4字节，addr是underlying array的地址。</p> <h2 id=_5>示例五 函数多返回值<a class=headerlink href=#_5 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=c1>//返回 A+B 和 A*B</span>
+<span class=kd>func</span> <span class=nx>SumAndProduct</span><span class=p>(</span><span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span><span class=p>)</span> <span class=p>(</span><span class=kt>int</span><span class=p>,</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nx>A</span><span class=o>+</span><span class=nx>B</span><span class=p>,</span> <span class=nx>A</span><span class=o>*</span><span class=nx>B</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>x</span> <span class=o>:=</span> <span class=mi>3</span>
+    <span class=nx>y</span> <span class=o>:=</span> <span class=mi>4</span>
+
+    <span class=nx>xPLUSy</span><span class=p>,</span> <span class=nx>xTIMESy</span> <span class=o>:=</span> <span class=nx>SumAndProduct</span><span class=p>(</span><span class=nx>x</span><span class=p>,</span> <span class=nx>y</span><span class=p>)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%d + %d = %d\n&quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>,</span> <span class=nx>y</span><span class=p>,</span> <span class=nx>xPLUSy</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%d * %d = %d\n&quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>,</span> <span class=nx>y</span><span class=p>,</span> <span class=nx>xTIMESy</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_6>示例六 函数传值不会改变外部变量值<a class=headerlink href=#_6 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=c1>//简单的一个函数，实现了参数+1的操作</span>
+<span class=kd>func</span> <span class=nx>add1</span><span class=p>(</span><span class=nx>a</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>a</span> <span class=p>=</span> <span class=nx>a</span><span class=o>+</span><span class=mi>1</span> <span class=c1>// 我们改变了a的值</span>
+    <span class=k>return</span> <span class=nx>a</span> <span class=c1>//返回一个新值</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>x</span> <span class=o>:=</span> <span class=mi>3</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x = &quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>  <span class=c1>// 应该输出 &quot;x = 3&quot;</span>
+
+    <span class=nx>x1</span> <span class=o>:=</span> <span class=nx>add1</span><span class=p>(</span><span class=nx>x</span><span class=p>)</span>  <span class=c1>//调用add1(x)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x+1 = &quot;</span><span class=p>,</span> <span class=nx>x1</span><span class=p>)</span> <span class=c1>// 应该输出&quot;x+1 = 4&quot;</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x = &quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>    <span class=c1>// 应该输出&quot;x = 3&quot;</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_7>示例七 函数传指针会改变外部变量值<a class=headerlink href=#_7 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=c1>//简单的一个函数，实现了参数+1的操作</span>
+<span class=kd>func</span> <span class=nx>add1</span><span class=p>(</span><span class=nx>a</span> <span class=o>*</span><span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span> <span class=c1>// 请注意，</span>
+    <span class=o>*</span><span class=nx>a</span> <span class=p>=</span> <span class=o>*</span><span class=nx>a</span><span class=o>+</span><span class=mi>1</span> <span class=c1>// 修改了a的值</span>
+    <span class=k>return</span> <span class=o>*</span><span class=nx>a</span> <span class=c1>// 返回新值</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>x</span> <span class=o>:=</span> <span class=mi>3</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x = &quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>  <span class=c1>// 应该输出 &quot;x = 3&quot;</span>
+
+    <span class=nx>x1</span> <span class=o>:=</span> <span class=nx>add1</span><span class=p>(</span><span class=o>&amp;</span><span class=nx>x</span><span class=p>)</span>  <span class=c1>// 调用 add1(&amp;x) 传x的地址</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x+1 = &quot;</span><span class=p>,</span> <span class=nx>x1</span><span class=p>)</span> <span class=c1>// 应该输出 &quot;x+1 = 4&quot;</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;x = &quot;</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>    <span class=c1>// 应该输出 &quot;x = 4&quot;</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=defer>示例八 defer 语句<a class=headerlink href=#defer title="Permanent link">&para;</a></h2> <p>在<code>defer</code>后指定的函数会在函数退出前调用。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>ReadWrite</span><span class=p>()</span> <span class=kt>bool</span> <span class=p>{</span>
+    <span class=nx>file</span><span class=p>.</span><span class=nx>Open</span><span class=p>(</span><span class=s>&quot;file&quot;</span><span class=p>)</span>
+    <span class=k>defer</span> <span class=nx>file</span><span class=p>.</span><span class=nx>Close</span><span class=p>()</span>
+    <span class=k>if</span> <span class=nx>failureX</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>false</span>
+    <span class=p>}</span>
+    <span class=k>if</span> <span class=nx>failureY</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>false</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=kc>true</span>
+<span class=p>}</span>
+</code></pre></div> <p>如果有很多调用<code>defer</code>，那么<code>defer</code>是采用后进先出模式，所以如下代码会输出<code>4 3 2 1 0</code></p> <div class=highlight><pre><span></span><code><span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>5</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+    <span class=k>defer</span> <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%d &quot;</span><span class=p>,</span> <span class=nx>i</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_8>示例九 函数作为值、类型<a class=headerlink href=#_8 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=kd>type</span> <span class=nx>testInt</span> <span class=kd>func</span><span class=p>(</span><span class=kt>int</span><span class=p>)</span> <span class=kt>bool</span> <span class=c1>// 声明了一个函数类型</span>
+
+<span class=kd>func</span> <span class=nx>isOdd</span><span class=p>(</span><span class=nx>integer</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>bool</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>integer</span><span class=o>%</span><span class=mi>2</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>false</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=kc>true</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>isEven</span><span class=p>(</span><span class=nx>integer</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>bool</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>integer</span><span class=o>%</span><span class=mi>2</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>true</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=kc>false</span>
+<span class=p>}</span>
+
+<span class=c1>// 声明的函数类型在这个地方当做了一个参数</span>
+
+<span class=kd>func</span> <span class=nx>filter</span><span class=p>(</span><span class=nx>slice</span> <span class=p>[]</span><span class=kt>int</span><span class=p>,</span> <span class=nx>f</span> <span class=nx>testInt</span><span class=p>)</span> <span class=p>[]</span><span class=kt>int</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>result</span> <span class=p>[]</span><span class=kt>int</span>
+    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>value</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>slice</span> <span class=p>{</span>
+        <span class=k>if</span> <span class=nx>f</span><span class=p>(</span><span class=nx>value</span><span class=p>)</span> <span class=p>{</span>
+            <span class=nx>result</span> <span class=p>=</span> <span class=nb>append</span><span class=p>(</span><span class=nx>result</span><span class=p>,</span> <span class=nx>value</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>result</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>(){</span>
+    <span class=nx>slice</span> <span class=o>:=</span> <span class=p>[]</span><span class=kt>int</span> <span class=p>{</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>7</span><span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;slice = &quot;</span><span class=p>,</span> <span class=nx>slice</span><span class=p>)</span>
+    <span class=nx>odd</span> <span class=o>:=</span> <span class=nx>filter</span><span class=p>(</span><span class=nx>slice</span><span class=p>,</span> <span class=nx>isOdd</span><span class=p>)</span>    <span class=c1>// 函数当做值来传递了</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Odd elements of slice are: &quot;</span><span class=p>,</span> <span class=nx>odd</span><span class=p>)</span>
+    <span class=nx>even</span> <span class=o>:=</span> <span class=nx>filter</span><span class=p>(</span><span class=nx>slice</span><span class=p>,</span> <span class=nx>isEven</span><span class=p>)</span>  <span class=c1>// 函数当做值来传递了</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Even elements of slice are: &quot;</span><span class=p>,</span> <span class=nx>even</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=panic-recover>示例十 使用 panic 和 recover<a class=headerlink href=#panic-recover title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>var</span> <span class=nx>user</span> <span class=p>=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Getenv</span><span class=p>(</span><span class=s>&quot;USER&quot;</span><span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>init</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>user</span> <span class=o>==</span> <span class=s>&quot;&quot;</span> <span class=p>{</span>
+        <span class=nb>panic</span><span class=p>(</span><span class=s>&quot;no value for $USER&quot;</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>下面这个函数检查作为其参数的函数在执行时是否会产生<code>panic</code>：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>throwsPanic</span><span class=p>(</span><span class=nx>f</span> <span class=kd>func</span><span class=p>())</span> <span class=p>(</span><span class=nx>b</span> <span class=kt>bool</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>defer</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>if</span> <span class=nx>x</span> <span class=o>:=</span> <span class=nb>recover</span><span class=p>();</span> <span class=nx>x</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=nx>b</span> <span class=p>=</span> <span class=kc>true</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=nx>f</span><span class=p>()</span> <span class=c1>//执行函数f，如果f中出现了panic，那么就可以恢复回来</span>
+    <span class=k>return</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=struct>示例十一 struct 的用法<a class=headerlink href=#struct title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>person</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>name</span> <span class=kt>string</span>
+    <span class=nx>age</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>var</span> <span class=nx>P</span> <span class=nx>person</span>  <span class=c1>// P现在就是person类型的变量了</span>
+
+<span class=nx>P</span><span class=p>.</span><span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;Astaxie&quot;</span>  <span class=c1>// 赋值&quot;Astaxie&quot;给P的name属性.</span>
+<span class=nx>P</span><span class=p>.</span><span class=nx>age</span> <span class=p>=</span> <span class=mi>25</span>  <span class=c1>// 赋值&quot;25&quot;给变量P的age属性</span>
+<span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;The person&#39;s name is %s&quot;</span><span class=p>,</span> <span class=nx>P</span><span class=p>.</span><span class=nx>name</span><span class=p>)</span>  <span class=c1>// 访问P的name属性.</span>
+</code></pre></div> <p>除了上面这种P的声明使用之外，还有另外几种声明使用方式：</p> <ul> <li>1.按照顺序提供初始化值</li> </ul> <p>P := person{"Tom", 25}</p> <ul> <li>2.通过<code>field:value</code>的方式初始化，这样可以任意顺序</li> </ul> <p>P := person{age:24, name:"Tom"}</p> <ul> <li>3.当然也可以通过<code>new</code>函数分配一个指针，此处P的类型为*person</li> </ul> <p>P := new(person)</p> <p>下面我们看一个完整的使用struct的例子：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=c1>// 声明一个新的类型</span>
+<span class=kd>type</span> <span class=nx>person</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>name</span> <span class=kt>string</span>
+    <span class=nx>age</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=c1>// 比较两个人的年龄，返回年龄大的那个人，并且返回年龄差</span>
+<span class=c1>// struct也是传值的</span>
+<span class=kd>func</span> <span class=nx>Older</span><span class=p>(</span><span class=nx>p1</span><span class=p>,</span> <span class=nx>p2</span> <span class=nx>person</span><span class=p>)</span> <span class=p>(</span><span class=nx>person</span><span class=p>,</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>p1</span><span class=p>.</span><span class=nx>age</span><span class=p>&gt;</span><span class=nx>p2</span><span class=p>.</span><span class=nx>age</span> <span class=p>{</span>  <span class=c1>// 比较p1和p2这两个人的年龄</span>
+        <span class=k>return</span> <span class=nx>p1</span><span class=p>,</span> <span class=nx>p1</span><span class=p>.</span><span class=nx>age</span><span class=o>-</span><span class=nx>p2</span><span class=p>.</span><span class=nx>age</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>p2</span><span class=p>,</span> <span class=nx>p2</span><span class=p>.</span><span class=nx>age</span><span class=o>-</span><span class=nx>p1</span><span class=p>.</span><span class=nx>age</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>tom</span> <span class=nx>person</span>
+
+    <span class=c1>// 赋值初始化</span>
+    <span class=nx>tom</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>tom</span><span class=p>.</span><span class=nx>age</span> <span class=p>=</span> <span class=s>&quot;Tom&quot;</span><span class=p>,</span> <span class=mi>18</span>
+
+    <span class=c1>// 两个字段都写清楚的初始化</span>
+    <span class=nx>bob</span> <span class=o>:=</span> <span class=nx>person</span><span class=p>{</span><span class=nx>age</span><span class=p>:</span><span class=mi>25</span><span class=p>,</span> <span class=nx>name</span><span class=p>:</span><span class=s>&quot;Bob&quot;</span><span class=p>}</span>
+
+    <span class=c1>// 按照struct定义顺序初始化值</span>
+    <span class=nx>paul</span> <span class=o>:=</span> <span class=nx>person</span><span class=p>{</span><span class=s>&quot;Paul&quot;</span><span class=p>,</span> <span class=mi>43</span><span class=p>}</span>
+
+    <span class=nx>tb_Older</span><span class=p>,</span> <span class=nx>tb_diff</span> <span class=o>:=</span> <span class=nx>Older</span><span class=p>(</span><span class=nx>tom</span><span class=p>,</span> <span class=nx>bob</span><span class=p>)</span>
+    <span class=nx>tp_Older</span><span class=p>,</span> <span class=nx>tp_diff</span> <span class=o>:=</span> <span class=nx>Older</span><span class=p>(</span><span class=nx>tom</span><span class=p>,</span> <span class=nx>paul</span><span class=p>)</span>
+    <span class=nx>bp_Older</span><span class=p>,</span> <span class=nx>bp_diff</span> <span class=o>:=</span> <span class=nx>Older</span><span class=p>(</span><span class=nx>bob</span><span class=p>,</span> <span class=nx>paul</span><span class=p>)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Of %s and %s, %s is older by %d years\n&quot;</span><span class=p>,</span>
+        <span class=nx>tom</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>bob</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>tb_Older</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>tb_diff</span><span class=p>)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Of %s and %s, %s is older by %d years\n&quot;</span><span class=p>,</span>
+        <span class=nx>tom</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>paul</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>tp_Older</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>tp_diff</span><span class=p>)</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Of %s and %s, %s is older by %d years\n&quot;</span><span class=p>,</span>
+        <span class=nx>bob</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>paul</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>bp_Older</span><span class=p>.</span><span class=nx>name</span><span class=p>,</span> <span class=nx>bp_diff</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=switch>示例十二 switch 测试<a class=headerlink href=#switch title="Permanent link">&para;</a></h2> <p><code>element.(type)</code>语法不能在switch外的任何逻辑里面使用，如果要在switch外面判断一个类型就使用<code>comma-ok</code>。</p> <div class=highlight><pre><span></span><code>    <span class=kn>package</span> <span class=nx>main</span>
+
+    <span class=kn>import</span> <span class=p>(</span>
+        <span class=s>&quot;fmt&quot;</span>
+        <span class=s>&quot;strconv&quot;</span>
+    <span class=p>)</span>
+
+    <span class=kd>type</span> <span class=nx>Element</span> <span class=kd>interface</span><span class=p>{}</span>
+    <span class=kd>type</span> <span class=nx>List</span> <span class=p>[]</span> <span class=nx>Element</span>
+
+    <span class=kd>type</span> <span class=nx>Person</span> <span class=kd>struct</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=kt>string</span>
+        <span class=nx>age</span> <span class=kt>int</span>
+    <span class=p>}</span>
+
+    <span class=c1>//打印</span>
+    <span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=nx>Person</span><span class=p>)</span> <span class=nx>String</span><span class=p>()</span> <span class=kt>string</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=s>&quot;(name: &quot;</span> <span class=o>+</span> <span class=nx>p</span><span class=p>.</span><span class=nx>name</span> <span class=o>+</span> <span class=s>&quot; - age: &quot;</span><span class=o>+</span><span class=nx>strconv</span><span class=p>.</span><span class=nx>Itoa</span><span class=p>(</span><span class=nx>p</span><span class=p>.</span><span class=nx>age</span><span class=p>)</span><span class=o>+</span> <span class=s>&quot; years)&quot;</span>
+    <span class=p>}</span>
+
+    <span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+        <span class=nx>list</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=nx>List</span><span class=p>,</span> <span class=mi>3</span><span class=p>)</span>
+        <span class=nx>list</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=p>=</span> <span class=mi>1</span> <span class=c1>//an int</span>
+        <span class=nx>list</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=p>=</span> <span class=s>&quot;Hello&quot;</span> <span class=c1>//a string</span>
+        <span class=nx>list</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=p>=</span> <span class=nx>Person</span><span class=p>{</span><span class=s>&quot;Dennis&quot;</span><span class=p>,</span> <span class=mi>70</span><span class=p>}</span>
+
+        <span class=k>for</span> <span class=nx>index</span><span class=p>,</span> <span class=nx>element</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>list</span><span class=p>{</span>
+            <span class=k>switch</span> <span class=nx>value</span> <span class=o>:=</span> <span class=nx>element</span><span class=p>.(</span><span class=kd>type</span><span class=p>)</span> <span class=p>{</span>
+                <span class=k>case</span> <span class=kt>int</span><span class=p>:</span>
+                    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;list[%d] is an int and its value is %d\n&quot;</span><span class=p>,</span> <span class=nx>index</span><span class=p>,</span> <span class=nx>value</span><span class=p>)</span>
+                <span class=k>case</span> <span class=kt>string</span><span class=p>:</span>
+                    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;list[%d] is a string and its value is %s\n&quot;</span><span class=p>,</span> <span class=nx>index</span><span class=p>,</span> <span class=nx>value</span><span class=p>)</span>
+                <span class=k>case</span> <span class=nx>Person</span><span class=p>:</span>
+                    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;list[%d] is a Person and its value is %s\n&quot;</span><span class=p>,</span> <span class=nx>index</span><span class=p>,</span> <span class=nx>value</span><span class=p>)</span>
+                <span class=k>default</span><span class=p>:</span>
+                    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;list[%d] is of a different type&quot;</span><span class=p>,</span> <span class=nx>index</span><span class=p>)</span>
+            <span class=p>}</span>
+        <span class=p>}</span>
+    <span class=p>}</span>
+</code></pre></div> <h2 id=channel>示例十三 无缓冲 channel<a class=headerlink href=#channel title="Permanent link">&para;</a></h2> <p>无缓冲 channel 是阻塞的。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=kd>func</span> <span class=nx>sum</span><span class=p>(</span><span class=nx>a</span> <span class=p>[]</span><span class=kt>int</span><span class=p>,</span> <span class=nx>c</span> <span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>total</span> <span class=o>:=</span> <span class=mi>0</span>
+    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>v</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>a</span> <span class=p>{</span>
+        <span class=nx>total</span> <span class=o>+=</span> <span class=nx>v</span>
+    <span class=p>}</span>
+    <span class=nx>c</span> <span class=o>&lt;-</span> <span class=nx>total</span>  <span class=c1>// send total to c</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>a</span> <span class=o>:=</span> <span class=p>[]</span><span class=kt>int</span><span class=p>{</span><span class=mi>7</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>8</span><span class=p>,</span> <span class=o>-</span><span class=mi>9</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>0</span><span class=p>}</span>
+
+    <span class=nx>c</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=nx>sum</span><span class=p>(</span><span class=nx>a</span><span class=p>[:</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>],</span> <span class=nx>c</span><span class=p>)</span>
+    <span class=k>go</span> <span class=nx>sum</span><span class=p>(</span><span class=nx>a</span><span class=p>[</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span><span class=p>:],</span> <span class=nx>c</span><span class=p>)</span>
+    <span class=nx>x</span><span class=p>,</span> <span class=nx>y</span> <span class=o>:=</span> <span class=o>&lt;-</span><span class=nx>c</span><span class=p>,</span> <span class=o>&lt;-</span><span class=nx>c</span>  <span class=c1>// receive from c</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>x</span><span class=p>,</span> <span class=nx>y</span><span class=p>,</span> <span class=nx>x</span> <span class=o>+</span> <span class=nx>y</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=channel_1>示例十四 有缓存的 channel<a class=headerlink href=#channel_1 title="Permanent link">&para;</a></h2> <p>有缓存的 channel 是非阻塞的。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>c</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span><span class=c1>//修改2为1就报错，修改2为3可以正常运行</span>
+    <span class=nx>c</span> <span class=o>&lt;-</span> <span class=mi>1</span>
+    <span class=nx>c</span> <span class=o>&lt;-</span> <span class=mi>2</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=o>&lt;-</span><span class=nx>c</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=o>&lt;-</span><span class=nx>c</span><span class=p>)</span>
+<span class=p>}</span>
+        <span class=c1>//修改为1报如下的错误:</span>
+        <span class=c1>//fatal error: all goroutines are asleep - deadlock!</span>
+</code></pre></div> <h2 id=nethttp-web>示例十五 net/http 包建立一个 Web 服务器<a class=headerlink href=#nethttp-web title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+    <span class=s>&quot;strings&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>sayhelloName</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>r</span><span class=p>.</span><span class=nx>ParseForm</span><span class=p>()</span>  <span class=c1>//解析参数，默认是不会解析的</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>r</span><span class=p>.</span><span class=nx>Form</span><span class=p>)</span>  <span class=c1>//这些信息是输出到服务器端的打印信息</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;path&quot;</span><span class=p>,</span> <span class=nx>r</span><span class=p>.</span><span class=nx>URL</span><span class=p>.</span><span class=nx>Path</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;scheme&quot;</span><span class=p>,</span> <span class=nx>r</span><span class=p>.</span><span class=nx>URL</span><span class=p>.</span><span class=nx>Scheme</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>r</span><span class=p>.</span><span class=nx>Form</span><span class=p>[</span><span class=s>&quot;url_long&quot;</span><span class=p>])</span>
+    <span class=k>for</span> <span class=nx>k</span><span class=p>,</span> <span class=nx>v</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>r</span><span class=p>.</span><span class=nx>Form</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;key:&quot;</span><span class=p>,</span> <span class=nx>k</span><span class=p>)</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;val:&quot;</span><span class=p>,</span> <span class=nx>strings</span><span class=p>.</span><span class=nx>Join</span><span class=p>(</span><span class=nx>v</span><span class=p>,</span> <span class=s>&quot;&quot;</span><span class=p>))</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;Hello winnerwinter!&quot;</span><span class=p>)</span> <span class=c1>//这个写入到w的是输出到客户端的</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>http</span><span class=p>.</span><span class=nx>HandleFunc</span><span class=p>(</span><span class=s>&quot;/&quot;</span><span class=p>,</span> <span class=nx>sayhelloName</span><span class=p>)</span> <span class=c1>//设置访问的路由</span>
+    <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;:9090&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>)</span> <span class=c1>//设置监听的端口</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenAndServe: &quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_9>示例十六 数学意义不严格的函数式编程<a class=headerlink href=#_9 title="Permanent link">&para;</a></h2> <p><strong>闭包函数以引用的方式访问外部变量。</strong></p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>adder</span><span class=p>()</span> <span class=kd>func</span><span class=p>(</span><span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>sum</span> <span class=o>:=</span> <span class=mi>0</span>
+    <span class=k>return</span> <span class=kd>func</span><span class=p>(</span><span class=nx>v</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+        <span class=nx>sum</span> <span class=o>+=</span> <span class=nx>v</span>
+        <span class=k>return</span> <span class=nx>sum</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>a</span> <span class=o>:=</span> <span class=nx>adder</span><span class=p>()</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>10</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>a</span><span class=p>(</span><span class=nx>i</span><span class=p>))</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_10>示例十七 基于管道的随机数生成器<a class=headerlink href=#_10 title="Permanent link">&para;</a></h2> <p>随机数的一个特点是不好预测。如果一个随机数的输出是可以简单预测的，那么一般会称为伪随机数。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>random</span><span class=p>(</span><span class=mi>100</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>i</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>random</span><span class=p>(</span><span class=nx>n</span> <span class=kt>int</span><span class=p>)</span> <span class=o>&lt;-</span><span class=kd>chan</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>c</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>defer</span> <span class=nb>close</span><span class=p>(</span><span class=nx>c</span><span class=p>)</span>
+        <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=nx>n</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+            <span class=k>select</span> <span class=p>{</span>
+            <span class=k>case</span> <span class=nx>c</span> <span class=o>&lt;-</span> <span class=mi>0</span><span class=p>:</span>
+            <span class=k>case</span> <span class=nx>c</span> <span class=o>&lt;-</span> <span class=mi>1</span><span class=p>:</span>
+            <span class=p>}</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=k>return</span> <span class=nx>c</span>
+<span class=p>}</span>
+</code></pre></div> <p>基于select语言特性构造的随机数生成器。</p> <h2 id=_11>示例十八 空数组用于管道的同步操作<a class=headerlink href=#_11 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code>   <span class=nx>c1</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;c1&quot;</span><span class=p>)</span>
+        <span class=nx>c1</span> <span class=o>&lt;-</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=kt>int</span><span class=p>{}</span>
+    <span class=p>}()</span>
+    <span class=o>&lt;-</span><span class=nx>c1</span>
+</code></pre></div> <p>在这里，我们并不关心管道中传输数据的真实类型，其中管道接收和发送操作只是用于消息的同步。对于这种场景，我们用空数组来作为管道类型可以减少管道元素赋值时的开销。当然一般更倾向于用无类型的匿名结构体代替：</p> <div class=highlight><pre><span></span><code>    <span class=nx>c2</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kd>struct</span><span class=p>{})</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;c2&quot;</span><span class=p>)</span>
+        <span class=nx>c2</span> <span class=o>&lt;-</span> <span class=kd>struct</span><span class=p>{}{}</span> <span class=c1>// struct{}部分是类型, {}表示对应的结构体值</span>
+    <span class=p>}()</span>
+    <span class=o>&lt;-</span><span class=nx>c2</span>
+</code></pre></div> <h2 id=_12>示例十九 可变参数其实是切片类型<a class=headerlink href=#_12 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=c1>// 多个参数和多个返回值</span>
+<span class=kd>func</span> <span class=nx>Swap</span><span class=p>(</span><span class=nx>a</span><span class=p>,</span> <span class=nx>b</span> <span class=kt>int</span><span class=p>)</span> <span class=p>(</span><span class=kt>int</span><span class=p>,</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nx>b</span><span class=p>,</span> <span class=nx>a</span>
+<span class=p>}</span>
+
+<span class=c1>// 可变数量的参数</span>
+<span class=c1>// more 对应 []int 切片类型</span>
+<span class=kd>func</span> <span class=nx>Sum</span><span class=p>(</span><span class=nx>a</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>more</span> <span class=o>...</span><span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>v</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>more</span> <span class=p>{</span>
+        <span class=nx>a</span> <span class=o>+=</span> <span class=nx>v</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>a</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_13>示例二十 空接口类型变参是否被解包会导致不同的结果<a class=headerlink href=#_13 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>a</span> <span class=p>=</span> <span class=p>[]</span><span class=kd>interface</span><span class=p>{}{</span><span class=mi>123</span><span class=p>,</span> <span class=s>&quot;abc&quot;</span><span class=p>}</span>
+
+    <span class=nx>Print</span><span class=p>(</span><span class=nx>a</span><span class=o>...</span><span class=p>)</span> <span class=c1>// 123 abc</span>
+    <span class=nx>Print</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span>    <span class=c1>// [123 abc]</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>Print</span><span class=p>(</span><span class=nx>a</span> <span class=o>...</span><span class=kd>interface</span><span class=p>{})</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>a</span><span class=o>...</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>第一个<code>Print</code>调用时传入的参数是<code>a...</code>，等价于直接调用<code>Print(123, "abc")</code>。第二个<code>Print</code>调用传入的是未解包的<code>a</code>，等价于直接调用<code>Print([]interface{}{123, "abc"})</code>。</p> <h2 id=_14>示例二十一 闭包可能导致隐含问题<a class=headerlink href=#_14 title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>3</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=k>defer</span> <span class=kd>func</span><span class=p>(){</span> <span class=nb>println</span><span class=p>(</span><span class=nx>i</span><span class=p>)</span> <span class=p>}</span> <span class=p>()</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+<span class=c1>// Output:</span>
+<span class=c1>// 3</span>
+<span class=c1>// 3</span>
+<span class=c1>// 3</span>
+</code></pre></div> <p>因为是闭包，在<code>for</code>迭代语句中，每个<code>defer</code>语句延迟执行的函数引用的都是同一个<code>i</code>迭代变量，在循环结束后这个变量的值为3，因此最终输出的都是3。</p> <p>修复的思路是在每轮迭代中为每个<code>defer</code>函数生成独有的变量。可以用下面两种方式：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>3</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>i</span> <span class=o>:=</span> <span class=nx>i</span> <span class=c1>// 定义一个循环体内局部变量i</span>
+        <span class=k>defer</span> <span class=kd>func</span><span class=p>(){</span> <span class=nb>println</span><span class=p>(</span><span class=nx>i</span><span class=p>)</span> <span class=p>}</span> <span class=p>()</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>3</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=c1>// 通过函数传入i</span>
+        <span class=c1>// defer 语句会马上对调用参数求值</span>
+        <span class=k>defer</span> <span class=kd>func</span><span class=p>(</span><span class=nx>i</span> <span class=kt>int</span><span class=p>){</span> <span class=nb>println</span><span class=p>(</span><span class=nx>i</span><span class=p>)</span> <span class=p>}</span> <span class=p>(</span><span class=nx>i</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>第一种方法是在循环体内部再定义一个局部变量，这样每次迭代<code>defer</code>语句的闭包函数捕获的都是不同的变量，这些变量的值对应迭代时的值。</p> <p>第二种方式是将迭代变量通过闭包函数的参数传入，<code>defer</code>语句会马上对调用参数求值。两种方式都是可以工作的。</p> <h2 id=->示例二十二 生产者-消费者模型<a class=headerlink href=#- title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=c1>// 生产者: 生成 factor 整数倍的序列</span>
+<span class=kd>func</span> <span class=nx>Producer</span><span class=p>(</span><span class=nx>factor</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>out</span> <span class=kd>chan</span><span class=o>&lt;-</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>out</span> <span class=o>&lt;-</span> <span class=nx>i</span><span class=o>*</span><span class=nx>factor</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=c1>// 消费者</span>
+<span class=kd>func</span> <span class=nx>Consumer</span><span class=p>(</span><span class=nx>in</span> <span class=o>&lt;-</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=nx>v</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>in</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>v</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>,</span> <span class=mi>64</span><span class=p>)</span> <span class=c1>// 成果队列</span>
+
+    <span class=k>go</span> <span class=nx>Producer</span><span class=p>(</span><span class=mi>3</span><span class=p>,</span> <span class=nx>ch</span><span class=p>)</span> <span class=c1>// 生成 3 的倍数的序列</span>
+    <span class=k>go</span> <span class=nx>Producer</span><span class=p>(</span><span class=mi>5</span><span class=p>,</span> <span class=nx>ch</span><span class=p>)</span> <span class=c1>// 生成 5 的倍数的序列</span>
+    <span class=k>go</span> <span class=nx>Consumer</span><span class=p>(</span><span class=nx>ch</span><span class=p>)</span>    <span class=c1>// 消费 生成的队列</span>
+
+    <span class=c1>// Ctrl+C 退出</span>
+    <span class=nx>sig</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Signal</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+    <span class=nx>signal</span><span class=p>.</span><span class=nx>Notify</span><span class=p>(</span><span class=nx>sig</span><span class=p>,</span> <span class=nx>syscall</span><span class=p>.</span><span class=nx>SIGINT</span><span class=p>,</span> <span class=nx>syscall</span><span class=p>.</span><span class=nx>SIGTERM</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;quit (%v)\n&quot;</span><span class=p>,</span> <span class=o>&lt;-</span><span class=nx>sig</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_15>示例二十五 发布订阅模型<a class=headerlink href=#_15 title="Permanent link">&para;</a></h2> <p>发布订阅（publish-and-subscribe）模型通常被简写为pub/sub模型。在这个模型中，消息生产者成为发布者（publisher），而消息消费者则成为订阅者（subscriber），生产者和消费者是M:N的关系。在传统生产者和消费者模型中，是将消息发送到一个队列中，而发布订阅模型则是将消息发布给一个主题。</p> <p>为此，我们构建了一个名为<code>pubsub</code>的发布订阅模型支持包：</p> <div class=highlight><pre><span></span><code><span class=c1>// Package pubsub implements a simple multi-topic pub-sub library.</span>
+<span class=kn>package</span> <span class=nx>pubsub</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;sync&quot;</span>
+    <span class=s>&quot;time&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=p>(</span>
+    <span class=nx>subscriber</span> <span class=kd>chan</span> <span class=kd>interface</span><span class=p>{}</span>         <span class=c1>// 订阅者为一个管道</span>
+    <span class=nx>topicFunc</span>  <span class=kd>func</span><span class=p>(</span><span class=nx>v</span> <span class=kd>interface</span><span class=p>{})</span> <span class=kt>bool</span> <span class=c1>// 主题为一个过滤器</span>
+<span class=p>)</span>
+
+<span class=c1>// 发布者对象</span>
+<span class=kd>type</span> <span class=nx>Publisher</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>m</span>           <span class=nx>sync</span><span class=p>.</span><span class=nx>RWMutex</span>             <span class=c1>// 读写锁</span>
+    <span class=nx>buffer</span>      <span class=kt>int</span>                      <span class=c1>// 订阅队列的缓存大小</span>
+    <span class=nx>timeout</span>     <span class=nx>time</span><span class=p>.</span><span class=nx>Duration</span>            <span class=c1>// 发布超时时间</span>
+    <span class=nx>subscribers</span> <span class=kd>map</span><span class=p>[</span><span class=nx>subscriber</span><span class=p>]</span><span class=nx>topicFunc</span> <span class=c1>// 订阅者信息</span>
+<span class=p>}</span>
+
+<span class=c1>// 构建一个发布者对象, 可以设置发布超时时间和缓存队列的长度</span>
+<span class=kd>func</span> <span class=nx>NewPublisher</span><span class=p>(</span><span class=nx>publishTimeout</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Duration</span><span class=p>,</span> <span class=nx>buffer</span> <span class=kt>int</span><span class=p>)</span> <span class=o>*</span><span class=nx>Publisher</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=o>&amp;</span><span class=nx>Publisher</span><span class=p>{</span>
+        <span class=nx>buffer</span><span class=p>:</span>      <span class=nx>buffer</span><span class=p>,</span>
+        <span class=nx>timeout</span><span class=p>:</span>     <span class=nx>publishTimeout</span><span class=p>,</span>
+        <span class=nx>subscribers</span><span class=p>:</span> <span class=nb>make</span><span class=p>(</span><span class=kd>map</span><span class=p>[</span><span class=nx>subscriber</span><span class=p>]</span><span class=nx>topicFunc</span><span class=p>),</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=c1>// 添加一个新的订阅者，订阅全部主题</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>Subscribe</span><span class=p>()</span> <span class=kd>chan</span> <span class=kd>interface</span><span class=p>{}</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nx>p</span><span class=p>.</span><span class=nx>SubscribeTopic</span><span class=p>(</span><span class=kc>nil</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=c1>// 添加一个新的订阅者，订阅过滤器筛选后的主题</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>SubscribeTopic</span><span class=p>(</span><span class=nx>topic</span> <span class=nx>topicFunc</span><span class=p>)</span> <span class=kd>chan</span> <span class=kd>interface</span><span class=p>{}</span> <span class=p>{</span>
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kd>interface</span><span class=p>{},</span> <span class=nx>p</span><span class=p>.</span><span class=nx>buffer</span><span class=p>)</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Lock</span><span class=p>()</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>subscribers</span><span class=p>[</span><span class=nx>ch</span><span class=p>]</span> <span class=p>=</span> <span class=nx>topic</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Unlock</span><span class=p>()</span>
+    <span class=k>return</span> <span class=nx>ch</span>
+<span class=p>}</span>
+
+<span class=c1>// 退出订阅</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>Evict</span><span class=p>(</span><span class=nx>sub</span> <span class=kd>chan</span> <span class=kd>interface</span><span class=p>{})</span> <span class=p>{</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Lock</span><span class=p>()</span>
+    <span class=k>defer</span> <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Unlock</span><span class=p>()</span>
+
+    <span class=nb>delete</span><span class=p>(</span><span class=nx>p</span><span class=p>.</span><span class=nx>subscribers</span><span class=p>,</span> <span class=nx>sub</span><span class=p>)</span>
+    <span class=nb>close</span><span class=p>(</span><span class=nx>sub</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=c1>// 发布一个主题</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>Publish</span><span class=p>(</span><span class=nx>v</span> <span class=kd>interface</span><span class=p>{})</span> <span class=p>{</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>RLock</span><span class=p>()</span>
+    <span class=k>defer</span> <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>RUnlock</span><span class=p>()</span>
+
+    <span class=kd>var</span> <span class=nx>wg</span> <span class=nx>sync</span><span class=p>.</span><span class=nx>WaitGroup</span>
+    <span class=k>for</span> <span class=nx>sub</span><span class=p>,</span> <span class=nx>topic</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>p</span><span class=p>.</span><span class=nx>subscribers</span> <span class=p>{</span>
+        <span class=nx>wg</span><span class=p>.</span><span class=nx>Add</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+        <span class=k>go</span> <span class=nx>p</span><span class=p>.</span><span class=nx>sendTopic</span><span class=p>(</span><span class=nx>sub</span><span class=p>,</span> <span class=nx>topic</span><span class=p>,</span> <span class=nx>v</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>wg</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>wg</span><span class=p>.</span><span class=nx>Wait</span><span class=p>()</span>
+<span class=p>}</span>
+
+<span class=c1>// 关闭发布者对象，同时关闭所有的订阅者管道。</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>Close</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Lock</span><span class=p>()</span>
+    <span class=k>defer</span> <span class=nx>p</span><span class=p>.</span><span class=nx>m</span><span class=p>.</span><span class=nx>Unlock</span><span class=p>()</span>
+
+    <span class=k>for</span> <span class=nx>sub</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>p</span><span class=p>.</span><span class=nx>subscribers</span> <span class=p>{</span>
+        <span class=nb>delete</span><span class=p>(</span><span class=nx>p</span><span class=p>.</span><span class=nx>subscribers</span><span class=p>,</span> <span class=nx>sub</span><span class=p>)</span>
+        <span class=nb>close</span><span class=p>(</span><span class=nx>sub</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=c1>// 发送主题，可以容忍一定的超时</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>Publisher</span><span class=p>)</span> <span class=nx>sendTopic</span><span class=p>(</span>
+    <span class=nx>sub</span> <span class=nx>subscriber</span><span class=p>,</span> <span class=nx>topic</span> <span class=nx>topicFunc</span><span class=p>,</span> <span class=nx>v</span> <span class=kd>interface</span><span class=p>{},</span> <span class=nx>wg</span> <span class=o>*</span><span class=nx>sync</span><span class=p>.</span><span class=nx>WaitGroup</span><span class=p>,</span>
+<span class=p>)</span> <span class=p>{</span>
+    <span class=k>defer</span> <span class=nx>wg</span><span class=p>.</span><span class=nx>Done</span><span class=p>()</span>
+    <span class=k>if</span> <span class=nx>topic</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=o>&amp;&amp;</span> <span class=p>!</span><span class=nx>topic</span><span class=p>(</span><span class=nx>v</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>return</span>
+    <span class=p>}</span>
+
+    <span class=k>select</span> <span class=p>{</span>
+    <span class=k>case</span> <span class=nx>sub</span> <span class=o>&lt;-</span> <span class=nx>v</span><span class=p>:</span>
+    <span class=k>case</span> <span class=o>&lt;-</span><span class=nx>time</span><span class=p>.</span><span class=nx>After</span><span class=p>(</span><span class=nx>p</span><span class=p>.</span><span class=nx>timeout</span><span class=p>):</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>下面的例子中，有两个订阅者分别订阅了全部主题和含有"golang"的主题：</p> <div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=s>&quot;path/to/pubsub&quot;</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>p</span> <span class=o>:=</span> <span class=nx>pubsub</span><span class=p>.</span><span class=nx>NewPublisher</span><span class=p>(</span><span class=mi>100</span><span class=o>*</span><span class=nx>time</span><span class=p>.</span><span class=nx>Millisecond</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span>
+    <span class=k>defer</span> <span class=nx>p</span><span class=p>.</span><span class=nx>Close</span><span class=p>()</span>
+
+    <span class=nx>all</span> <span class=o>:=</span> <span class=nx>p</span><span class=p>.</span><span class=nx>Subscribe</span><span class=p>()</span>
+    <span class=nx>golang</span> <span class=o>:=</span> <span class=nx>p</span><span class=p>.</span><span class=nx>SubscribeTopic</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=nx>v</span> <span class=kd>interface</span><span class=p>{})</span> <span class=kt>bool</span> <span class=p>{</span>
+        <span class=k>if</span> <span class=nx>s</span><span class=p>,</span> <span class=nx>ok</span> <span class=o>:=</span> <span class=nx>v</span><span class=p>.(</span><span class=kt>string</span><span class=p>);</span> <span class=nx>ok</span> <span class=p>{</span>
+            <span class=k>return</span> <span class=nx>strings</span><span class=p>.</span><span class=nx>Contains</span><span class=p>(</span><span class=nx>s</span><span class=p>,</span> <span class=s>&quot;golang&quot;</span><span class=p>)</span>
+        <span class=p>}</span>
+        <span class=k>return</span> <span class=kc>false</span>
+    <span class=p>})</span>
+
+    <span class=nx>p</span><span class=p>.</span><span class=nx>Publish</span><span class=p>(</span><span class=s>&quot;hello,  world!&quot;</span><span class=p>)</span>
+    <span class=nx>p</span><span class=p>.</span><span class=nx>Publish</span><span class=p>(</span><span class=s>&quot;hello, golang!&quot;</span><span class=p>)</span>
+
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span>  <span class=nx>msg</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>all</span> <span class=p>{</span>
+            <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;all:&quot;</span><span class=p>,</span> <span class=nx>msg</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span> <span class=p>()</span>
+
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span>  <span class=nx>msg</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>golang</span> <span class=p>{</span>
+            <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;golang:&quot;</span><span class=p>,</span> <span class=nx>msg</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span> <span class=p>()</span>
+
+    <span class=c1>// 运行一定时间后退出</span>
+    <span class=nx>time</span><span class=p>.</span><span class=nx>Sleep</span><span class=p>(</span><span class=mi>3</span> <span class=o>*</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Second</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>在发布订阅模型中，每条消息都会传送给多个订阅者。发布者通常不会知道、也不关心哪一个订阅者正在接收主题消息。订阅者和发布者可以在运行时动态添加，是一种松散的耦合关系，这使得系统的复杂性可以随时间的推移而增长。在现实生活中，像天气预报之类的应用就可以应用这个并发模式。</p> <h2 id=syncwaitgroup>示例二十四 使用<code>sync.WaitGroup</code>等待一组事件<a class=headerlink href=#syncwaitgroup title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>wg</span> <span class=nx>sync</span><span class=p>.</span><span class=nx>WaitGroup</span>
+
+    <span class=c1>// 开N个后台打印线程</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>10</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>wg</span><span class=p>.</span><span class=nx>Add</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>  <span class=c1>// 增加等待事件</span>
+
+        <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+            <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;你好, 世界&quot;</span><span class=p>)</span>
+            <span class=nx>wg</span><span class=p>.</span><span class=nx>Done</span><span class=p>()</span>  <span class=c1>// 完成一个事件</span>
+        <span class=p>}()</span>
+    <span class=p>}</span>
+
+    <span class=c1>// 等待N个后台线程完成</span>
+    <span class=nx>wg</span><span class=p>.</span><span class=nx>Wait</span><span class=p>()</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=_16>示例二十五 切片代码示例<a class=headerlink href=#_16 title="Permanent link">&para;</a></h2> <h3 id=_17>切片内存技巧<a class=headerlink href=#_17 title="Permanent link">&para;</a></h3> <p>对于切片来说，<code>len</code>为<code>0</code>但是<code>cap</code>容量不为<code>0</code>的切片是非常有用的特性。当然，如果<code>len</code>和<code>cap</code>都为<code>0</code>的话，则变成一个真正的空切片，虽然它并不是一个<code>nil</code>值的切片。在判断一个切片是否为空时，一般通过<code>len</code>获取切片的长度来判断，一般很少将切片和<code>nil</code>值做直接的比较。</p> <p>比如下面的<code>TrimSpace</code>函数用于删除<code>[]byte</code>中的空格。函数实现利用了0长切片的特性，实现高效而且简洁。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>TrimSpace</span><span class=p>(</span><span class=nx>s</span> <span class=p>[]</span><span class=kt>byte</span><span class=p>)</span> <span class=p>[]</span><span class=kt>byte</span> <span class=p>{</span>
+    <span class=nx>b</span> <span class=o>:=</span> <span class=nx>s</span><span class=p>[:</span><span class=mi>0</span><span class=p>]</span>
+    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>x</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>s</span> <span class=p>{</span>
+        <span class=k>if</span> <span class=nx>x</span> <span class=o>!=</span> <span class=sc>&#39; &#39;</span> <span class=p>{</span>
+            <span class=nx>b</span> <span class=p>=</span> <span class=nb>append</span><span class=p>(</span><span class=nx>b</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>b</span>
+<span class=p>}</span>
+</code></pre></div> <p>其实类似的根据过滤条件原地删除切片元素的算法都可以采用类似的方式处理（因为是删除操作不会出现内存不足的情形）：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Filter</span><span class=p>(</span><span class=nx>s</span> <span class=p>[]</span><span class=kt>byte</span><span class=p>,</span> <span class=nx>fn</span> <span class=kd>func</span><span class=p>(</span><span class=nx>x</span> <span class=kt>byte</span><span class=p>)</span> <span class=kt>bool</span><span class=p>)</span> <span class=p>[]</span><span class=kt>byte</span> <span class=p>{</span>
+    <span class=nx>b</span> <span class=o>:=</span> <span class=nx>s</span><span class=p>[:</span><span class=mi>0</span><span class=p>]</span>
+    <span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>x</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>s</span> <span class=p>{</span>
+        <span class=k>if</span> <span class=p>!</span><span class=nx>fn</span><span class=p>(</span><span class=nx>x</span><span class=p>)</span> <span class=p>{</span>
+            <span class=nx>b</span> <span class=p>=</span> <span class=nb>append</span><span class=p>(</span><span class=nx>b</span><span class=p>,</span> <span class=nx>x</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>b</span>
+<span class=p>}</span>
+</code></pre></div> <p>切片高效操作的要点是要降低内存分配的次数，尽量保证<code>append</code>操作不会超出<code>cap</code>的容量，降低触发内存分配的次数和每次分配内存大小。</p> <h3 id=_18>避免切片内存泄漏<a class=headerlink href=#_18 title="Permanent link">&para;</a></h3> <p>切片操作并不会复制底层的数据。<strong>底层的数组会被保存在内存中，直到它不再被引用。但是有时候可能会因为一个小的内存引用而导致底层整个数组处于被使用的状态，这会延迟自动内存回收器对底层数组的回收。</strong></p> <p>例如，<code>FindPhoneNumber</code>函数加载整个文件到内存，然后搜索第一个出现的电话号码，最后结果以切片方式返回。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>FindPhoneNumber</span><span class=p>(</span><span class=nx>filename</span> <span class=kt>string</span><span class=p>)</span> <span class=p>[]</span><span class=kt>byte</span> <span class=p>{</span>
+    <span class=nx>b</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nx>ReadFile</span><span class=p>(</span><span class=nx>filename</span><span class=p>)</span>
+    <span class=k>return</span> <span class=nx>regexp</span><span class=p>.</span><span class=nx>MustCompile</span><span class=p>(</span><span class=s>&quot;[0-9]+&quot;</span><span class=p>).</span><span class=nx>Find</span><span class=p>(</span><span class=nx>b</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>这段代码返回的<code>[]byte</code>指向保存整个文件的数组。因为切片引用了整个原始数组，导致自动垃圾回收器不能及时释放底层数组的空间。一个小的需求可能导致需要长时间保存整个文件数据。这虽然这并不是传统意义上的内存泄漏，但是可能会拖慢系统的整体性能。</p> <p><strong>要修复这个问题，可以将感兴趣的数据复制到一个新的切片中</strong>（数据的传值是Go语言编程的一个哲学，虽然传值有一定的代价，但是换取的好处是切断了对原始数据的依赖）：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>FindPhoneNumber</span><span class=p>(</span><span class=nx>filename</span> <span class=kt>string</span><span class=p>)</span> <span class=p>[]</span><span class=kt>byte</span> <span class=p>{</span>
+    <span class=nx>b</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nx>ReadFile</span><span class=p>(</span><span class=nx>filename</span><span class=p>)</span>
+    <span class=nx>b</span> <span class=p>=</span> <span class=nx>regexp</span><span class=p>.</span><span class=nx>MustCompile</span><span class=p>(</span><span class=s>&quot;[0-9]+&quot;</span><span class=p>).</span><span class=nx>Find</span><span class=p>(</span><span class=nx>b</span><span class=p>)</span>
+    <span class=k>return</span> <span class=nb>append</span><span class=p>([]</span><span class=kt>byte</span><span class=p>{},</span> <span class=nx>b</span><span class=o>...</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>类似的问题，在删除切片元素时可能会遇到。<strong>假设切片里存放的是指针对象，那么下面删除末尾的元素后，被删除的元素依然被切片底层数组引用，从而导致不能及时被自动垃圾回收器回收</strong>（这要依赖回收器的实现方式）：</p> <div class=highlight><pre><span></span><code><span class=kd>var</span> <span class=nx>a</span> <span class=p>[]</span><span class=o>*</span><span class=kt>int</span><span class=p>{</span> <span class=o>...</span> <span class=p>}</span>
+<span class=nx>a</span> <span class=p>=</span> <span class=nx>a</span><span class=p>[:</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>    <span class=c1>// 被删除的最后一个元素依然被引用, 可能导致GC操作被阻碍</span>
+</code></pre></div> <p><strong>保险的方式是先将需要自动内存回收的元素设置为<code>nil</code>，保证自动回收器可以发现需要回收的对象，然后再进行切片的删除操作：</strong></p> <div class=highlight><pre><span></span><code><span class=kd>var</span> <span class=nx>a</span> <span class=p>[]</span><span class=o>*</span><span class=kt>int</span><span class=p>{</span> <span class=o>...</span> <span class=p>}</span>
+<span class=nx>a</span><span class=p>[</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=p>=</span> <span class=kc>nil</span> <span class=c1>// GC回收最后一个元素内存</span>
+<span class=nx>a</span> <span class=p>=</span> <span class=nx>a</span><span class=p>[:</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>)</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>  <span class=c1>// 从切片删除最后一个元素</span>
+</code></pre></div> <p>当然，如果切片存在的周期很短的话，可以不用刻意处理这个问题。因为如果切片本身已经可以被GC回收的话，切片对应的每个元素自然也就是可以被回收的了。</p> <h3 id=_19>切片类型强制转换<a class=headerlink href=#_19 title="Permanent link">&para;</a></h3> <p>为了安全，当两个切片类型<code>[]T</code>和<code>[]Y</code>的底层原始切片类型不同时，Go语言是无法直接转换类型的。不过安全都是有一定代价的，有时候这种转换是有它的价值的——可以简化编码或者是提升代码的性能。比如在64位系统上，需要对一个<code>[]float64</code>切片进行高速排序，我们可以将它强制转为<code>[]int</code>整数切片，然后以整数的方式进行排序（因为<code>float64</code>遵循IEEE754浮点数标准特性，当浮点数有序时对应的整数也必然是有序的）。</p> <p>下面的代码通过两种方法将<code>[]float64</code>类型的切片转换为<code>[]int</code>类型的切片：</p> <div class=highlight><pre><span></span><code><span class=c1>// +build amd64 arm64</span>
+
+<span class=kn>import</span> <span class=s>&quot;sort&quot;</span>
+
+<span class=kd>var</span> <span class=nx>a</span> <span class=p>=</span> <span class=p>[]</span><span class=kt>float64</span><span class=p>{</span><span class=mi>4</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>7</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>88</span><span class=p>,</span> <span class=mi>1</span><span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>SortFloat64FastV1</span><span class=p>(</span><span class=nx>a</span> <span class=p>[]</span><span class=kt>float64</span><span class=p>)</span> <span class=p>{</span>
+    <span class=c1>// 强制类型转换</span>
+    <span class=kd>var</span> <span class=nx>b</span> <span class=p>[]</span><span class=kt>int</span> <span class=p>=</span> <span class=p>((</span><span class=o>*</span><span class=p>[</span><span class=mi>1</span> <span class=o>&lt;&lt;</span> <span class=mi>20</span><span class=p>]</span><span class=kt>int</span><span class=p>)(</span><span class=nx>unsafe</span><span class=p>.</span><span class=nx>Pointer</span><span class=p>(</span><span class=o>&amp;</span><span class=nx>a</span><span class=p>[</span><span class=mi>0</span><span class=p>])))[:</span><span class=nb>len</span><span class=p>(</span><span class=nx>a</span><span class=p>):</span><span class=nb>cap</span><span class=p>(</span><span class=nx>a</span><span class=p>)]</span>
+
+    <span class=c1>// 以int方式给float64排序</span>
+    <span class=nx>sort</span><span class=p>.</span><span class=nx>Ints</span><span class=p>(</span><span class=nx>b</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>SortFloat64FastV2</span><span class=p>(</span><span class=nx>a</span> <span class=p>[]</span><span class=kt>float64</span><span class=p>)</span> <span class=p>{</span>
+    <span class=c1>// 通过 reflect.SliceHeader 更新切片头部信息实现转换</span>
+    <span class=kd>var</span> <span class=nx>c</span> <span class=p>[]</span><span class=kt>int</span>
+    <span class=nx>aHdr</span> <span class=o>:=</span> <span class=p>(</span><span class=o>*</span><span class=nx>reflect</span><span class=p>.</span><span class=nx>SliceHeader</span><span class=p>)(</span><span class=nx>unsafe</span><span class=p>.</span><span class=nx>Pointer</span><span class=p>(</span><span class=o>&amp;</span><span class=nx>a</span><span class=p>))</span>
+    <span class=nx>cHdr</span> <span class=o>:=</span> <span class=p>(</span><span class=o>*</span><span class=nx>reflect</span><span class=p>.</span><span class=nx>SliceHeader</span><span class=p>)(</span><span class=nx>unsafe</span><span class=p>.</span><span class=nx>Pointer</span><span class=p>(</span><span class=o>&amp;</span><span class=nx>c</span><span class=p>))</span>
+    <span class=o>*</span><span class=nx>cHdr</span> <span class=p>=</span> <span class=o>*</span><span class=nx>aHdr</span>
+
+    <span class=c1>// 以int方式给float64排序</span>
+    <span class=nx>sort</span><span class=p>.</span><span class=nx>Ints</span><span class=p>(</span><span class=nx>c</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>第一种强制转换是**先将切片数据的开始地址转换为一个较大的数组的指针，然后对数组指针对应的数组重新做切片操作。**中间需要<code>unsafe.Pointer</code>来连接两个不同类型的指针传递。需要注意的是，Go语言实现中非0大小数组的长度不得超过2GB，因此需要针对数组元素的类型大小计算数组的最大长度范围（<code>[]uint8</code>最大2GB，<code>[]uint16</code>最大1GB，以此类推，但是<code>[]struct{}</code>数组的长度可以超过2GB）。</p> <p>第二种转换操作是**分别取到两个不同类型的切片头信息指针**，任何类型的切片头部信息底层都是对应<code>reflect.SliceHeader</code>结构，<strong>然后通过更新结构体方式来更新切片信息</strong>，从而实现<code>a</code>对应的<code>[]float64</code>切片到<code>c</code>对应的<code>[]int</code>类型切片的转换。</p> <p>通过基准测试，我们可以发现用<code>sort.Ints</code>对转换后的<code>[]int</code>排序的性能要比用<code>sort.Float64s</code>排序的性能好一点。不过需要注意的是，这个方法可行的前提是**要保证<code>[]float64</code>中没有 <code>NaN</code> 和 <code>Inf</code> 等非规范的浮点数**（因为浮点数中NaN不可排序，正0和负0相等，但是整数中没有这类情形）。</p> <h2 id=_20>示例二十六 素数筛<a class=headerlink href=#_20 title="Permanent link">&para;</a></h2> <p>“素数筛”的原理如图：</p> <p><img alt=img src=https://chai2010.cn/advanced-go-programming-book/images/ch1-13-prime-sieve.png></p> <p>我们需要先生成最初的<code>2, 3, 4, ...</code>自然数序列（不包含开头的0、1）：</p> <div class=highlight><pre><span></span><code><span class=c1>// 返回生成自然数序列的管道: 2, 3, 4, ...</span>
+<span class=kd>func</span> <span class=nx>GenerateNatural</span><span class=p>()</span> <span class=kd>chan</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>2</span><span class=p>;</span> <span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+            <span class=nx>ch</span> <span class=o>&lt;-</span> <span class=nx>i</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=k>return</span> <span class=nx>ch</span>
+<span class=p>}</span>
+</code></pre></div> <p><code>GenerateNatural</code>函数内部启动一个Goroutine生产序列，返回对应的管道。</p> <p>然后是为每个素数构造一个筛子：将输入序列中是素数倍数的数提出，并返回新的序列，是一个新的管道。</p> <div class=highlight><pre><span></span><code><span class=c1>// 管道过滤器: 删除能被素数整除的数</span>
+<span class=kd>func</span> <span class=nx>PrimeFilter</span><span class=p>(</span><span class=nx>in</span> <span class=o>&lt;-</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>prime</span> <span class=kt>int</span><span class=p>)</span> <span class=kd>chan</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>out</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>{</span>
+            <span class=k>if</span> <span class=nx>i</span> <span class=o>:=</span> <span class=o>&lt;-</span><span class=nx>in</span><span class=p>;</span> <span class=nx>i</span><span class=o>%</span><span class=nx>prime</span> <span class=o>!=</span> <span class=mi>0</span> <span class=p>{</span>
+                <span class=nx>out</span> <span class=o>&lt;-</span> <span class=nx>i</span>
+            <span class=p>}</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=k>return</span> <span class=nx>out</span>
+<span class=p>}</span>
+</code></pre></div> <p><code>PrimeFilter</code>函数也是内部启动一个Goroutine生产序列，返回过滤后序列对应的管道。</p> <p>现在我们可以在<code>main</code>函数中驱动这个并发的素数筛了：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nx>GenerateNatural</span><span class=p>()</span> <span class=c1>// 自然数序列: 2, 3, 4, ...</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>100</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>prime</span> <span class=o>:=</span> <span class=o>&lt;-</span><span class=nx>ch</span> <span class=c1>// 新出现的素数</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%v: %v\n&quot;</span><span class=p>,</span> <span class=nx>i</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=nx>prime</span><span class=p>)</span>
+        <span class=nx>ch</span> <span class=p>=</span> <span class=nx>PrimeFilter</span><span class=p>(</span><span class=nx>ch</span><span class=p>,</span> <span class=nx>prime</span><span class=p>)</span> <span class=c1>// 基于新素数构造的过滤器</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>我们先是调用<code>GenerateNatural()</code>生成最原始的从2开始的自然数序列。然后开始一个100次迭代的循环，希望生成100个素数。在每次循环迭代开始的时候，管道中的第一个数必定是素数，我们先读取并打印这个素数。然后基于管道中剩余的数列，并以当前取出的素数为筛子过滤后面的素数。不同的素数筛子对应的管道是串联在一起的。</p> <p>素数筛展示了一种优雅的并发程序结构。但是因为每个并发体处理的任务粒度太细微，程序整体的性能并不理想。对于细粒度的并发程序，CSP模型中固有的消息传递的代价太高了（多线程并发模型同样要面临线程启动的代价）。</p> <p><code>GenerateNatural</code>和<code>PrimeFilter</code>函数内部都启动了新的Goroutine，当<code>main</code>函数不再使用管道时后台Goroutine有泄漏的风险。我们可以通过<code>context</code>包来避免这个问题，下面是改进的素数筛实现：</p> <div class=highlight><pre><span></span><code><span class=c1>// 返回生成自然数序列的管道: 2, 3, 4, ...</span>
+<span class=kd>func</span> <span class=nx>GenerateNatural</span><span class=p>(</span><span class=nx>ctx</span> <span class=nx>context</span><span class=p>.</span><span class=nx>Context</span><span class=p>)</span> <span class=kd>chan</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>2</span><span class=p>;</span> <span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+            <span class=k>select</span> <span class=p>{</span>
+            <span class=k>case</span> <span class=o>&lt;-</span> <span class=nx>ctx</span><span class=p>.</span><span class=nx>Done</span><span class=p>():</span>
+                <span class=k>return</span>
+            <span class=k>case</span> <span class=nx>ch</span> <span class=o>&lt;-</span> <span class=nx>i</span><span class=p>:</span>
+            <span class=p>}</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=k>return</span> <span class=nx>ch</span>
+<span class=p>}</span>
+
+<span class=c1>// 管道过滤器: 删除能被素数整除的数</span>
+<span class=kd>func</span> <span class=nx>PrimeFilter</span><span class=p>(</span><span class=nx>ctx</span> <span class=nx>context</span><span class=p>.</span><span class=nx>Context</span><span class=p>,</span> <span class=nx>in</span> <span class=o>&lt;-</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>prime</span> <span class=kt>int</span><span class=p>)</span> <span class=kd>chan</span> <span class=kt>int</span> <span class=p>{</span>
+    <span class=nx>out</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>(</span><span class=kd>chan</span> <span class=kt>int</span><span class=p>)</span>
+    <span class=k>go</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>{</span>
+            <span class=k>if</span> <span class=nx>i</span> <span class=o>:=</span> <span class=o>&lt;-</span><span class=nx>in</span><span class=p>;</span> <span class=nx>i</span><span class=o>%</span><span class=nx>prime</span> <span class=o>!=</span> <span class=mi>0</span> <span class=p>{</span>
+                <span class=k>select</span> <span class=p>{</span>
+                <span class=k>case</span> <span class=o>&lt;-</span> <span class=nx>ctx</span><span class=p>.</span><span class=nx>Done</span><span class=p>():</span>
+                    <span class=k>return</span>
+                <span class=k>case</span> <span class=nx>out</span> <span class=o>&lt;-</span> <span class=nx>i</span><span class=p>:</span>
+                <span class=p>}</span>
+            <span class=p>}</span>
+        <span class=p>}</span>
+    <span class=p>}()</span>
+    <span class=k>return</span> <span class=nx>out</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=c1>// 通过 Context 控制后台Goroutine状态</span>
+    <span class=nx>ctx</span><span class=p>,</span> <span class=nx>cancel</span> <span class=o>:=</span> <span class=nx>context</span><span class=p>.</span><span class=nx>WithCancel</span><span class=p>(</span><span class=nx>context</span><span class=p>.</span><span class=nx>Background</span><span class=p>())</span>
+
+    <span class=nx>ch</span> <span class=o>:=</span> <span class=nx>GenerateNatural</span><span class=p>(</span><span class=nx>ctx</span><span class=p>)</span> <span class=c1>// 自然数序列: 2, 3, 4, ...</span>
+    <span class=k>for</span> <span class=nx>i</span> <span class=o>:=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=p>&lt;</span> <span class=mi>100</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span> <span class=p>{</span>
+        <span class=nx>prime</span> <span class=o>:=</span> <span class=o>&lt;-</span><span class=nx>ch</span> <span class=c1>// 新出现的素数</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;%v: %v\n&quot;</span><span class=p>,</span> <span class=nx>i</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=nx>prime</span><span class=p>)</span>
+        <span class=nx>ch</span> <span class=p>=</span> <span class=nx>PrimeFilter</span><span class=p>(</span><span class=nx>ctx</span><span class=p>,</span> <span class=nx>ch</span><span class=p>,</span> <span class=nx>prime</span><span class=p>)</span> <span class=c1>// 基于新素数构造的过滤器</span>
+    <span class=p>}</span>
+
+    <span class=nx>cancel</span><span class=p>()</span>
+<span class=p>}</span>
+</code></pre></div> <p>当main函数完成工作前，通过调用<code>cancel()</code>来通知后台Goroutine退出，这样就避免了Goroutine的泄漏。</p> <hr> <div class=md-source-date> <small> Last update: May 16, 2020 </small> </div> </article> </div> </div> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <script src=../../assets/javascripts/vendor.22b62ea4.min.js></script> <script src=../../assets/javascripts/bundle.5f27aba8.min.js></script><script id=__lang type=application/json>{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script> <script>
+        app = initialize({
+          base: "../..",
+          features: ["instant", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.f6ebf1dc.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script> </body> </html>

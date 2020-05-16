@@ -1,0 +1,376 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.1.2, mkdocs-material-5.1.7"><title>网络编程 - Notes</title><link rel=stylesheet href=../../assets/stylesheets/main.4c7052ca.min.css><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback"><style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style></head> <body dir=ltr> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#_1 class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid" aria-label=Header> <a href=../.. title=Notes class="md-header-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> <label class="md-header-nav__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header-nav__title data-md-component=header-title> <div class=md-header-nav__ellipsis> <span class="md-header-nav__topic md-ellipsis"> Notes </span> <span class="md-header-nav__topic md-ellipsis"> 网络编程 </span> </div> </div> <label class="md-header-nav__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query data-md-state=active> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <button type=reset class="md-search__icon md-icon" aria-label=Clear data-md-component=search-reset tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class="md-tabs__link md-tabs__link--active"> Home </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title=Notes class="md-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> Notes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. title=Home class=md-nav__link> Home </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#web class=md-nav__link> Web 服务器 </a> </li> <li class=md-nav__item> <a href=#ip class=md-nav__link> IP 类型 </a> </li> <li class=md-nav__item> <a href=#tcp-socket class=md-nav__link> TCP Socket </a> </li> <li class=md-nav__item> <a href=#tcp-client class=md-nav__link> TCP client </a> </li> <li class=md-nav__item> <a href=#tcp-server class=md-nav__link> TCP server </a> </li> <li class=md-nav__item> <a href=#tcp class=md-nav__link> 控制TCP连接 </a> </li> <li class=md-nav__item> <a href=#udp-socket class=md-nav__link> UDP Socket </a> </li> <li class=md-nav__item> <a href=#websocket class=md-nav__link> WebSocket </a> </li> <li class=md-nav__item> <a href=#rest class=md-nav__link> REST </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1 id=_1>网络编程<a class=headerlink href=#_1 title="Permanent link">&para;</a></h1> <h2 id=web>Web 服务器<a class=headerlink href=#web title="Permanent link">&para;</a></h2> <p><a href=http://golang.org/pkg/net/http/ >包 http</a> 通过任何实现了 <code>http.Handler</code> 的值来响应 HTTP 请求：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>http</span>
+
+<span class=kd>type</span> <span class=nx>Handler</span> <span class=kd>interface</span> <span class=p>{</span>
+    <span class=nx>ServeHTTP</span><span class=p>(</span><span class=nx>w</span> <span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>Request</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>举个🌰，以下代码中，类型 <code>Hello</code> 实现了 <code>http.Handler</code>。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Hello</span> <span class=kd>struct</span><span class=p>{}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>h</span> <span class=nx>Hello</span><span class=p>)</span> <span class=nx>ServeHTTP</span><span class=p>(</span>
+    <span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span>
+    <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprint</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;Hello!&quot;</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>h</span> <span class=nx>Hello</span>
+    <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;localhost:4000&quot;</span><span class=p>,</span> <span class=nx>h</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=ip>IP 类型<a class=headerlink href=#ip title="Permanent link">&para;</a></h2> <p>IP类型的定义如下：</p> <div class=highlight><pre><span></span><code>type IP []byte
+</code></pre></div> <p><code>ParseIP(s string) IP</code>函数会把一个IPv4或者IPv6的地址转化成IP类型。</p> <p>举个🌰：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+    <span class=s>&quot;fmt&quot;</span>
+<span class=p>)</span>
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Usage: %s ip-addr\n&quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>])</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>name</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+    <span class=nx>addr</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ParseIP</span><span class=p>(</span><span class=nx>name</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>addr</span> <span class=o>==</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Invalid address&quot;</span><span class=p>)</span>
+    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;The address is &quot;</span><span class=p>,</span> <span class=nx>addr</span><span class=p>.</span><span class=nx>String</span><span class=p>())</span>
+    <span class=p>}</span>
+    <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>执行之后，输入一个IP地址就会给出相应的IP格式</p> <h2 id=tcp-socket>TCP Socket<a class=headerlink href=#tcp-socket title="Permanent link">&para;</a></h2> <p><code>TCPConn</code>类型，有两个主要的函数：</p> <div class=highlight><pre><span></span><code>func (c *TCPConn) Write(b []byte) (int, error)
+func (c *TCPConn) Read(b []byte) (int, error)
+</code></pre></div> <p><code>TCPConn</code>可以用在客户端和服务器端来读写数据。</p> <p><code>TCPAddr</code>类型，表示一个TCP的地址信息，他的定义如下：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>TCPAddr</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>IP</span> <span class=nx>IP</span>
+    <span class=nx>Port</span> <span class=kt>int</span>
+    <span class=nx>Zone</span> <span class=kt>string</span> <span class=c1>// IPv6 scoped addressing zone</span>
+<span class=p>}</span>
+</code></pre></div> <p>通过<code>ResolveTCPAddr</code>获取一个<code>TCPAddr</code>：</p> <div class=highlight><pre><span></span><code>func ResolveTCPAddr(net, addr string) (*TCPAddr, os.Error)
+</code></pre></div> <ul> <li>net参数是"tcp4"、"tcp6"、"tcp"中的任意一个，分别表示TCP(IPv4-only), TCP(IPv6-only)或者TCP(IPv4, IPv6的任意一个)。</li> <li>addr表示域名或者IP地址及其端口号，例如"<a href=http://www.google.com/ >www.google.com:80</a>" 或者"127.0.0.1:22"。</li> </ul> <h2 id=tcp-client>TCP client<a class=headerlink href=#tcp-client title="Permanent link">&para;</a></h2> <p>Go语言中通过net包中的<code>DialTCP</code>函数来建立一个TCP连接，并返回一个<code>TCPConn</code>类型的对象，当连接建立时服务器端也创建一个同类型的对象，此时客户端和服务器端通过各自拥有的<code>TCPConn</code>对象来进行数据交换。一般而言，客户端通过<code>TCPConn</code>对象将请求信息发送到服务器端，读取服务器端响应的信息。服务器端读取并解析来自客户端的请求，并返回应答信息，这个连接只有当任一端关闭了连接之后才失效，不然这连接可以一直在使用。</p> <p>建立连接的函数定义如下：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>DialTCP</span><span class=p>(</span><span class=nx>network</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>laddr</span><span class=p>,</span> <span class=nx>raddr</span> <span class=o>*</span><span class=nx>TCPAddr</span><span class=p>)</span> <span class=p>(</span><span class=o>*</span><span class=nx>TCPConn</span><span class=p>,</span> <span class=kt>error</span><span class=p>)</span>
+</code></pre></div> <ul> <li>network参数是"tcp4"、"tcp6"、"tcp"中的任意一个，分别表示TCP(IPv4-only)、TCP(IPv6-only)或者TCP(IPv4,IPv6的任意一个)</li> <li>laddr表示本机地址，一般设置为nil</li> <li>raddr表示远程的服务地址</li> </ul> <p>举个🌰：模拟一个基于HTTP协议的客户端请求去连接一个Web服务端。我们要写一个简单的http请求头，格式类似如下：</p> <div class=highlight><pre><span></span><code><span class=s>&quot;HEAD / HTTP/1.0\r\n\r\n&quot;</span>
+</code></pre></div> <p>从服务端接收到的响应信息格式可能如下：</p> <div class=highlight><pre><span></span><code><span class=err>HTTP/</span><span class=mf>1.0</span> <span class=mi>200</span> <span class=err>OK</span>
+<span class=err>ETag:</span> <span class=s2>&quot;-9985996&quot;</span>
+<span class=err>Last-Modified:</span> <span class=err>Thu,</span> <span class=mi>25</span> <span class=err>Mar</span> <span class=mi>2010</span> <span class=mi>17</span><span class=err>:</span><span class=mi>51</span><span class=err>:</span><span class=mi>10</span> <span class=err>GMT</span>
+<span class=err>Content-Length:</span> <span class=mi>18074</span>
+<span class=err>Connection:</span> <span class=err>close</span>
+<span class=err>Date:</span> <span class=err>Sat,</span> <span class=mi>28</span> <span class=err>Aug</span> <span class=mi>2010</span> <span class=mi>00</span><span class=err>:</span><span class=mi>43</span><span class=err>:</span><span class=mi>48</span> <span class=err>GMT</span>
+<span class=err>Server:</span> <span class=err>lighttpd/</span><span class=mf>1.4</span><span class=err>.</span><span class=mi>23</span>
+</code></pre></div> <p>我们的客户端代码如下所示：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;io/ioutil&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Usage: %s host:port &quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>])</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+    <span class=nx>tcpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveTCPAddr</span><span class=p>(</span><span class=s>&quot;tcp4&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>DialTCP</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>,</span> <span class=nx>tcpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Write</span><span class=p>([]</span><span class=nb>byte</span><span class=p>(</span><span class=s>&quot;HEAD / HTTP/1.0\r\n\r\n&quot;</span><span class=p>))</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=c1>// result, err := ioutil.ReadAll(conn)</span>
+    <span class=nx>result</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>([]</span><span class=kt>byte</span><span class=p>,</span> <span class=mi>256</span><span class=p>)</span>
+    <span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Read</span><span class=p>(</span><span class=nx>result</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>result</span><span class=p>))</span>
+    <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Fatal error: %s&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>通过上面的代码我们可以看出：首先程序将用户的输入作为参数<code>service</code>传入<code>net.ResolveTCPAddr</code>获取一个tcpAddr,然后把tcpAddr传入DialTCP后创建了一个TCP连接<code>conn</code>，通过<code>conn</code>来发送请求信息，最后通过<code>ioutil.ReadAll</code>从<code>conn</code>中读取全部的文本，也就是服务端响应反馈的信息。</p> <h2 id=tcp-server>TCP server<a class=headerlink href=#tcp-server title="Permanent link">&para;</a></h2> <p>在服务器端我们需要绑定服务到指定的非激活端口，并监听此端口，当有客户端请求到达的时候可以接收到来自客户端连接的请求。</p> <p>net包中有相应功能的函数，函数定义如下：</p> <div class=highlight><pre><span></span><code>func ListenTCP(network string, laddr *TCPAddr) (*TCPListener, error)
+func (l *TCPListener) Accept() (Conn, error)
+</code></pre></div> <p>参数说明同DialTCP的参数一样。</p> <p>举个🌰：</p> <p>我们实现一个简单的时间同步服务，监听7777端口，当有新的客户端请求到达并同意接受<code>Accept</code>该请求的时候他会反馈当前的时间信息。在代码中<code>for</code>循环里，当有错误发生时，直接continue而不是退出，是因为在服务器端跑代码的时候，当有错误发生的情况下最好是由服务端记录错误，然后当前连接的客户端直接报错而退出，从而不会影响到当前服务端运行的整个服务。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+    <span class=s>&quot;time&quot;</span>
+    <span class=s>&quot;strconv&quot;</span>
+    <span class=s>&quot;strings&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=s>&quot;:1200&quot;</span>
+    <span class=nx>tcpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveTCPAddr</span><span class=p>(</span><span class=s>&quot;tcp4&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ListenTCP</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>tcpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=k>continue</span>
+        <span class=p>}</span>
+        <span class=k>go</span> <span class=nx>handleClient</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span> <span class=c1>// 实现并发</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=c1>// 把业务处理分离到函数 handleClient</span>
+<span class=kd>func</span> <span class=nx>handleClient</span><span class=p>(</span><span class=nx>conn</span> <span class=nx>net</span><span class=p>.</span><span class=nx>Conn</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>conn</span><span class=p>.</span><span class=nx>SetReadDeadline</span><span class=p>(</span><span class=nx>time</span><span class=p>.</span><span class=nx>Now</span><span class=p>().</span><span class=nx>Add</span><span class=p>(</span><span class=mi>2</span> <span class=o>*</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Minute</span><span class=p>))</span> <span class=c1>// set 2 minutes timeout</span>
+    <span class=nx>request</span> <span class=o>:=</span> <span class=nb>make</span><span class=p>([]</span><span class=kt>byte</span><span class=p>,</span> <span class=mi>128</span><span class=p>)</span> <span class=c1>// set maxium request length to 128B to prevent flood attack</span>
+    <span class=k>defer</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Close</span><span class=p>()</span>  <span class=c1>// close connection before exit</span>
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>read_len</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Read</span><span class=p>(</span><span class=nx>request</span><span class=p>)</span>
+
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+            <span class=k>break</span>
+        <span class=p>}</span>
+
+            <span class=k>if</span> <span class=nx>read_len</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+                <span class=k>break</span> <span class=c1>// connection already closed by client</span>
+            <span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=nx>strings</span><span class=p>.</span><span class=nx>TrimSpace</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>request</span><span class=p>[:</span><span class=nx>read_len</span><span class=p>]))</span> <span class=o>==</span> <span class=s>&quot;timestamp&quot;</span> <span class=p>{</span>
+                <span class=nx>daytime</span> <span class=o>:=</span> <span class=nx>strconv</span><span class=p>.</span><span class=nx>FormatInt</span><span class=p>(</span><span class=nx>time</span><span class=p>.</span><span class=nx>Now</span><span class=p>().</span><span class=nx>Unix</span><span class=p>(),</span> <span class=mi>10</span><span class=p>)</span>
+                <span class=nx>conn</span><span class=p>.</span><span class=nx>Write</span><span class=p>([]</span><span class=nb>byte</span><span class=p>(</span><span class=nx>daytime</span><span class=p>))</span>
+            <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+                <span class=nx>daytime</span> <span class=o>:=</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Now</span><span class=p>().</span><span class=nx>String</span><span class=p>()</span>
+                <span class=nx>conn</span><span class=p>.</span><span class=nx>Write</span><span class=p>([]</span><span class=nb>byte</span><span class=p>(</span><span class=nx>daytime</span><span class=p>))</span>
+            <span class=p>}</span>
+
+            <span class=nx>request</span> <span class=p>=</span> <span class=nb>make</span><span class=p>([]</span><span class=kt>byte</span><span class=p>,</span> <span class=mi>128</span><span class=p>)</span> <span class=c1>// clear last read content</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Fatal error: %s&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>在上面这个例子中，我们使用<code>conn.Read()</code>不断读取客户端发来的请求。由于我们需要保持与客户端的长连接，所以不能在读取完一次请求后就关闭连接。由于<code>conn.SetReadDeadline()</code>设置了超时，当一定时间内客户端无请求发送，<code>conn</code>便会自动关闭，下面的for循环即会因为连接已关闭而跳出。需要注意的是，<code>request</code>在创建时需要指定一个最大长度以防止flood attack；每次读取到请求处理完毕后，需要清理request，因为<code>conn.Read()</code>会将新读取到的内容append到原内容之后。</p> <h2 id=tcp>控制TCP连接<a class=headerlink href=#tcp title="Permanent link">&para;</a></h2> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>DialTimeout</span><span class=p>(</span><span class=nx>net</span><span class=p>,</span> <span class=nx>addr</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>timeout</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Duration</span><span class=p>)</span> <span class=p>(</span><span class=nx>Conn</span><span class=p>,</span> <span class=kt>error</span><span class=p>)</span>  <span class=c1>// 设置建立连接的超时时间</span>
+</code></pre></div> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>TCPConn</span><span class=p>)</span> <span class=nx>SetReadDeadline</span><span class=p>(</span><span class=nx>t</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span> <span class=kt>error</span>  <span class=c1>// 设置读取一个连接的超时时间</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>TCPConn</span><span class=p>)</span> <span class=nx>SetWriteDeadline</span><span class=p>(</span><span class=nx>t</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Time</span><span class=p>)</span> <span class=kt>error</span>  <span class=c1>// 设置写入一个连接的超时时间</span>
+</code></pre></div> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>TCPConn</span><span class=p>)</span> <span class=nx>SetKeepAlive</span><span class=p>(</span><span class=nx>keepalive</span> <span class=kt>bool</span><span class=p>)</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span>  <span class=c1>// 设置keepAlive属性</span>
+</code></pre></div> <h2 id=udp-socket>UDP Socket<a class=headerlink href=#udp-socket title="Permanent link">&para;</a></h2> <p>Go语言包中处理UDP Socket和TCP Socket不同的地方就是在服务器端处理多个客户端请求数据包的方式不同,UDP缺少了对客户端连接请求的Accept函数。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>ResolveUDPAddr</span><span class=p>(</span><span class=nx>net</span><span class=p>,</span> <span class=nx>addr</span> <span class=kt>string</span><span class=p>)</span> <span class=p>(</span><span class=o>*</span><span class=nx>UDPAddr</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span><span class=p>)</span>
+<span class=kd>func</span> <span class=nx>DialUDP</span><span class=p>(</span><span class=nx>net</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>laddr</span><span class=p>,</span> <span class=nx>raddr</span> <span class=o>*</span><span class=nx>UDPAddr</span><span class=p>)</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>UDPConn</span><span class=p>,</span> <span class=nx>err</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span><span class=p>)</span>
+<span class=kd>func</span> <span class=nx>ListenUDP</span><span class=p>(</span><span class=nx>net</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>laddr</span> <span class=o>*</span><span class=nx>UDPAddr</span><span class=p>)</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>UDPConn</span><span class=p>,</span> <span class=nx>err</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span><span class=p>)</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>UDPConn</span><span class=p>)</span> <span class=nx>ReadFromUDP</span><span class=p>(</span><span class=nx>b</span> <span class=p>[]</span><span class=kt>byte</span><span class=p>)</span> <span class=p>(</span><span class=nx>n</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>addr</span> <span class=o>*</span><span class=nx>UDPAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span><span class=p>)</span>
+<span class=kd>func</span> <span class=p>(</span><span class=nx>c</span> <span class=o>*</span><span class=nx>UDPConn</span><span class=p>)</span> <span class=nx>WriteToUDP</span><span class=p>(</span><span class=nx>b</span> <span class=p>[]</span><span class=kt>byte</span><span class=p>,</span> <span class=nx>addr</span> <span class=o>*</span><span class=nx>UDPAddr</span><span class=p>)</span> <span class=p>(</span><span class=nx>n</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>err</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Error</span><span class=p>)</span>
+</code></pre></div> <p>举个🌰</p> <p>UDP的客户端：（TCP换成了UDP而已）</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Usage: %s host:port&quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>])</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+    <span class=nx>udpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveUDPAddr</span><span class=p>(</span><span class=s>&quot;udp4&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>DialUDP</span><span class=p>(</span><span class=s>&quot;udp&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>,</span> <span class=nx>udpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Write</span><span class=p>([]</span><span class=nb>byte</span><span class=p>(</span><span class=s>&quot;anything&quot;</span><span class=p>))</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=kd>var</span> <span class=nx>buf</span> <span class=p>[</span><span class=mi>512</span><span class=p>]</span><span class=kt>byte</span>
+    <span class=nx>n</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>Read</span><span class=p>(</span><span class=nx>buf</span><span class=p>[</span><span class=mi>0</span><span class=p>:])</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>buf</span><span class=p>[</span><span class=mi>0</span><span class=p>:</span><span class=nx>n</span><span class=p>]))</span>
+    <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Fatal error %s&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>相应的UDP服务器端：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+    <span class=s>&quot;time&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=s>&quot;:1200&quot;</span>
+    <span class=nx>udpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveUDPAddr</span><span class=p>(</span><span class=s>&quot;udp4&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ListenUDP</span><span class=p>(</span><span class=s>&quot;udp&quot;</span><span class=p>,</span> <span class=nx>udpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>handleClient</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+<span class=kd>func</span> <span class=nx>handleClient</span><span class=p>(</span><span class=nx>conn</span> <span class=o>*</span><span class=nx>net</span><span class=p>.</span><span class=nx>UDPConn</span><span class=p>)</span> <span class=p>{</span>
+    <span class=kd>var</span> <span class=nx>buf</span> <span class=p>[</span><span class=mi>512</span><span class=p>]</span><span class=kt>byte</span>
+    <span class=nx>_</span><span class=p>,</span> <span class=nx>addr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>conn</span><span class=p>.</span><span class=nx>ReadFromUDP</span><span class=p>(</span><span class=nx>buf</span><span class=p>[</span><span class=mi>0</span><span class=p>:])</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=k>return</span>
+    <span class=p>}</span>
+    <span class=nx>daytime</span> <span class=o>:=</span> <span class=nx>time</span><span class=p>.</span><span class=nx>Now</span><span class=p>().</span><span class=nx>String</span><span class=p>()</span>
+    <span class=nx>conn</span><span class=p>.</span><span class=nx>WriteToUDP</span><span class=p>([]</span><span class=nb>byte</span><span class=p>(</span><span class=nx>daytime</span><span class=p>),</span> <span class=nx>addr</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Stderr</span><span class=p>,</span> <span class=s>&quot;Fatal error %s&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=websocket>WebSocket<a class=headerlink href=#websocket title="Permanent link">&para;</a></h2> <p>WebSocket 分为客户端和服务端</p> <p>WebSocket 采用了一些特殊的报头，使得浏览器和服务器只需要做一个握手的动作，就可以在浏览器和服务器之间建立一条连接通道。且此连接会保持在活动状态，你可以使用JavaScript来向连接写入或从中接收数据，就像在使用一个常规的TCP Socket一样。它解决了Web实时化的问题，相比传统HTTP有如下好处：</p> <ul> <li>一个Web客户端只建立一个TCP连接</li> <li>Websocket服务端可以推送(push)数据到web客户端.</li> <li>有更加轻量级的头，减少数据传送量</li> </ul> <p>WebSocket URL的起始输入是ws://或是wss://（在SSL上）。</p> <p>Go语言标准包里面没有提供对WebSocket的支持，但是在由官方维护的go.net子包中有对这个的支持，可以通过如下的命令获取该包：</p> <div class=highlight><pre><span></span><code><span class=k>go</span> <span class=nx>get</span> <span class=nx>golang</span><span class=p>.</span><span class=nx>org</span><span class=o>/</span><span class=nx>x</span><span class=o>/</span><span class=nx>net</span><span class=o>/</span><span class=nx>websocket</span>
+</code></pre></div> <p>举个🌰: </p> <p>需求：用户输入信息，客户端通过WebSocket将信息发送给服务器端，服务器端收到信息之后主动Push信息到客户端，然后客户端将输出其收到的信息。</p> <p>客户端的代码如下：</p> <div class=highlight><pre><span></span><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var sock = null;
+        var wsuri = &quot;ws://127.0.0.1:1234&quot;;
+
+        window.onload = function() {
+
+            console.log(&quot;onload&quot;);
+
+            sock = new WebSocket(wsuri);
+
+            sock.onopen = function() {
+                console.log(&quot;connected to &quot; + wsuri);
+            }
+
+            sock.onclose = function(e) {
+                console.log(&quot;connection closed (&quot; + e.code + &quot;)&quot;);
+            }
+
+            sock.onmessage = function(e) {
+                console.log(&quot;message received: &quot; + e.data);
+            }
+        };
+
+        function send() {
+            var msg = document.getElementById(&#39;message&#39;).value;
+            sock.send(msg);
+        };
+    &lt;/script&gt;
+    &lt;h1&gt;WebSocket Echo Test&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;p&gt;
+            Message: &lt;input id=&quot;message&quot; type=&quot;text&quot; value=&quot;Hello, world!&quot;&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+    &lt;button onclick=&quot;send();&quot;&gt;Send Message&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div> <p>可以看到客户端JS，很容易的就通过WebSocket函数建立了一个与服务器的连接sock，当握手成功后，会触发WebSocket对象的onopen事件，告诉客户端连接已经成功建立。客户端一共绑定了四个事件。</p> <ul> <li>1）onopen 建立连接后触发</li> <li>2）onmessage 收到消息后触发</li> <li>3）onerror 发生错误时触发</li> <li>4）onclose 关闭连接时触发</li> </ul> <p>我们服务器端的实现如下：</p> <div class=highlight><pre><span></span><code>package main
+
+import (
+    &quot;golang.org/x/net/websocket&quot;
+    &quot;fmt&quot;
+    &quot;log&quot;
+    &quot;net/http&quot;
+)
+
+func Echo(ws *websocket.Conn) {
+    var err error
+
+    for {
+        var reply string
+
+        if err = websocket.Message.Receive(ws, &amp;reply); err != nil {
+            fmt.Println(&quot;Can&#39;t receive&quot;)
+            break
+        }
+
+        fmt.Println(&quot;Received back from client: &quot; + reply)
+
+        msg := &quot;Received:  &quot; + reply
+        fmt.Println(&quot;Sending to client: &quot; + msg)
+
+        if err = websocket.Message.Send(ws, msg); err != nil {
+            fmt.Println(&quot;Can&#39;t send&quot;)
+            break
+        }
+    }
+}
+
+func main() {
+    http.Handle(&quot;/&quot;, websocket.Handler(Echo))
+
+    if err := http.ListenAndServe(&quot;:1234&quot;, nil); err != nil {
+        log.Fatal(&quot;ListenAndServe:&quot;, err)
+    }
+}
+</code></pre></div> <p>当客户端将用户输入的信息Send之后，服务器端通过Receive接收到了相应信息，然后通过Send发送了应答信息。</p> <h2 id=rest>REST<a class=headerlink href=#rest title="Permanent link">&para;</a></h2> <ul> <li>HTML标准只能通过链接和表单支持<code>GET</code>和<code>POST</code>。在没有Ajax支持的网页浏览器中不能发出<code>PUT</code>或<code>DELETE</code>命令</li> <li>有些防火墙会挡住HTTP <code>PUT</code>和<code>DELETE</code>请求，要绕过这个限制，客户端需要把实际的<code>PUT</code>和<code>DELETE</code>请求通过 POST 请求穿透过来。RESTful 服务则要负责在收到的 POST 请求中找到原始的 HTTP 方法并还原。可以通过<code>POST</code>里面增加隐藏字段<code>_method</code>这种方式可以来模拟<code>PUT</code>、<code>DELETE</code>等方式，但是服务器端需要做转换。</li> </ul> <p>举个🌰: </p> <p>需求：我们访问的资源是用户，我们通过不同的method来访问不同的函数。</p> <p>第三方库<code>github.com/julienschmidt/httprouter</code>，这个库实现了自定义路由和方便的路由规则映射，通过它，我们可以很方便的实现REST的架构。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+
+    <span class=s>&quot;github.com/julienschmidt/httprouter&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>Index</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>_</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprint</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;Welcome!\n&quot;</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>ps</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;hello, %s!\n&quot;</span><span class=p>,</span> <span class=nx>ps</span><span class=p>.</span><span class=nx>ByName</span><span class=p>(</span><span class=s>&quot;name&quot;</span><span class=p>))</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>getuser</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>ps</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>uid</span> <span class=o>:=</span> <span class=nx>ps</span><span class=p>.</span><span class=nx>ByName</span><span class=p>(</span><span class=s>&quot;uid&quot;</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;you are get user %s&quot;</span><span class=p>,</span> <span class=nx>uid</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>modifyuser</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>ps</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>uid</span> <span class=o>:=</span> <span class=nx>ps</span><span class=p>.</span><span class=nx>ByName</span><span class=p>(</span><span class=s>&quot;uid&quot;</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;you are modify user %s&quot;</span><span class=p>,</span> <span class=nx>uid</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>deleteuser</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>ps</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>uid</span> <span class=o>:=</span> <span class=nx>ps</span><span class=p>.</span><span class=nx>ByName</span><span class=p>(</span><span class=s>&quot;uid&quot;</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;you are delete user %s&quot;</span><span class=p>,</span> <span class=nx>uid</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>adduser</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>,</span> <span class=nx>ps</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>Params</span><span class=p>)</span> <span class=p>{</span>
+    <span class=c1>// uid := r.FormValue(&quot;uid&quot;)</span>
+    <span class=nx>uid</span> <span class=o>:=</span> <span class=nx>ps</span><span class=p>.</span><span class=nx>ByName</span><span class=p>(</span><span class=s>&quot;uid&quot;</span><span class=p>)</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Fprintf</span><span class=p>(</span><span class=nx>w</span><span class=p>,</span> <span class=s>&quot;you are add user %s&quot;</span><span class=p>,</span> <span class=nx>uid</span><span class=p>)</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>router</span> <span class=o>:=</span> <span class=nx>httprouter</span><span class=p>.</span><span class=nx>New</span><span class=p>()</span>
+    <span class=nx>router</span><span class=p>.</span><span class=nx>GET</span><span class=p>(</span><span class=s>&quot;/&quot;</span><span class=p>,</span> <span class=nx>Index</span><span class=p>)</span>
+    <span class=nx>router</span><span class=p>.</span><span class=nx>GET</span><span class=p>(</span><span class=s>&quot;/hello/:name&quot;</span><span class=p>,</span> <span class=nx>Hello</span><span class=p>)</span>
+
+    <span class=nx>router</span><span class=p>.</span><span class=nx>GET</span><span class=p>(</span><span class=s>&quot;/user/:uid&quot;</span><span class=p>,</span> <span class=nx>getuser</span><span class=p>)</span>
+    <span class=nx>router</span><span class=p>.</span><span class=nx>POST</span><span class=p>(</span><span class=s>&quot;/adduser/:uid&quot;</span><span class=p>,</span> <span class=nx>adduser</span><span class=p>)</span>
+    <span class=nx>router</span><span class=p>.</span><span class=nx>DELETE</span><span class=p>(</span><span class=s>&quot;/deluser/:uid&quot;</span><span class=p>,</span> <span class=nx>deleteuser</span><span class=p>)</span>
+    <span class=nx>router</span><span class=p>.</span><span class=nx>PUT</span><span class=p>(</span><span class=s>&quot;/moduser/:uid&quot;</span><span class=p>,</span> <span class=nx>modifyuser</span><span class=p>)</span>
+
+    <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;:8080&quot;</span><span class=p>,</span> <span class=nx>router</span><span class=p>))</span>
+<span class=p>}</span>
+</code></pre></div> <p>通过上面的代码可知，REST就是根据不同的method访问同一个资源的时候实现不同的逻辑处理。</p> <hr> <div class=md-source-date> <small> Last update: May 16, 2020 </small> </div> </article> </div> </div> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <script src=../../assets/javascripts/vendor.22b62ea4.min.js></script> <script src=../../assets/javascripts/bundle.5f27aba8.min.js></script><script id=__lang type=application/json>{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script> <script>
+        app = initialize({
+          base: "../..",
+          features: ["instant", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.f6ebf1dc.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script> </body> </html>

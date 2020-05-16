@@ -1,0 +1,481 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.1.2, mkdocs-material-5.1.7"><title>Remote Procedure Call - Notes</title><link rel=stylesheet href=../../assets/stylesheets/main.4c7052ca.min.css><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback"><style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style></head> <body dir=ltr> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#remote-procedure-call class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid" aria-label=Header> <a href=../.. title=Notes class="md-header-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> <label class="md-header-nav__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header-nav__title data-md-component=header-title> <div class=md-header-nav__ellipsis> <span class="md-header-nav__topic md-ellipsis"> Notes </span> <span class="md-header-nav__topic md-ellipsis"> Remote Procedure Call </span> </div> </div> <label class="md-header-nav__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query data-md-state=active> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <button type=reset class="md-search__icon md-icon" aria-label=Clear data-md-component=search-reset tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class="md-tabs__link md-tabs__link--active"> Home </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title=Notes class="md-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> Notes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. title=Home class=md-nav__link> Home </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#rpc-hello-world class=md-nav__link> RPC版 Hello World </a> </li> <li class=md-nav__item> <a href=#hello-world class=md-nav__link> 重构 Hello World </a> </li> <li class=md-nav__item> <a href=#_1 class=md-nav__link> 语言无关 </a> </li> <li class=md-nav__item> <a href=#httprpc class=md-nav__link> Http上的RPC </a> </li> <li class=md-nav__item> <a href=#rpc class=md-nav__link> 更多 RPC 示例 </a> <nav class=md-nav aria-label="更多 RPC 示例"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#http-rpc class=md-nav__link> HTTP RPC </a> </li> <li class=md-nav__item> <a href=#tcp-rpc class=md-nav__link> TCP RPC </a> </li> <li class=md-nav__item> <a href=#json-rpc class=md-nav__link> JSON RPC </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1 id=remote-procedure-call>Remote Procedure Call<a class=headerlink href=#remote-procedure-call title="Permanent link">&para;</a></h1> <p>Go语言的RPC包的路径为net/rpc，也就是放在了net包目录下面。因此我们可以猜测该RPC包是建立在net包基础之上的。</p> <p>Go标准包中已经提供了对RPC的支持，而且支持三个级别的RPC：TCP、HTTP、JSONRPC。但Go的RPC包是独一无二的RPC，它和传统的RPC系统不同，它只支持Go开发的服务器与客户端之间的交互，因为在内部，它们采用了Gob来编码。</p> <p>Go RPC的函数只有符合下面的条件才能被远程访问，不然会被忽略，详细的要求如下：</p> <ul> <li>函数必须是导出的(首字母大写)</li> <li>必须有两个导出类型的参数，</li> <li>第一个参数是接收的参数，第二个参数是返回给客户端的参数，第二个参数必须是指针类型的</li> <li>函数还要有一个返回值error</li> </ul> <p>举个🌰，以下的RPC函数格式正确：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>T</span><span class=p>)</span> <span class=nx>MethodName</span><span class=p>(</span><span class=nx>argType</span> <span class=nx>T1</span><span class=p>,</span> <span class=nx>replyType</span> <span class=o>*</span><span class=nx>T2</span><span class=p>)</span> <span class=kt>error</span>
+</code></pre></div> <p>T、T1和T2类型必须能被<code>encoding/gob</code>包编解码。</p> <p>任何的RPC都需要通过网络来传递数据，Go RPC可以利用HTTP和TCP来传递数据，利用HTTP的好处是可以直接复用<code>net/http</code>里面的一些函数。</p> <h2 id=rpc-hello-world>RPC版 Hello World<a class=headerlink href=#rpc-hello-world title="Permanent link">&para;</a></h2> <p>我们先构造一个HelloService类型，其中的Hello方法用于实现打印功能：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>HelloService</span> <span class=kd>struct</span> <span class=p>{}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>HelloService</span><span class=p>)</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>request</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>string</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>reply</span> <span class=p>=</span> <span class=s>&quot;hello:&quot;</span> <span class=o>+</span> <span class=nx>request</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+</code></pre></div> <p>其中Hello方法必须满足Go语言的RPC规则：方法只能有两个可序列化的参数，其中第二个参数是指针类型，并且返回一个error类型，同时必须是公开的方法。</p> <p>然后就可以将HelloService类型的对象注册为一个RPC服务：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>RegisterName</span><span class=p>(</span><span class=s>&quot;HelloService&quot;</span><span class=p>,</span> <span class=nb>new</span><span class=p>(</span><span class=nx>HelloService</span><span class=p>))</span>
+
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>Listen</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenTCP error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;Accept error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>ServeConn</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>其中rpc.Register函数调用会将对象类型中所有满足RPC规则的对象方法注册为RPC函数，所有注册的方法会放在“HelloService”服务空间之下。然后我们建立一个唯一的TCP链接，并且通过rpc.ServeConn函数在该TCP链接上为对方提供RPC服务。</p> <p>下面是客户端请求HelloService服务的代码：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>client</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>Dial</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;localhost:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;dialing:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>string</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;HelloService.Hello&quot;</span><span class=p>,</span> <span class=s>&quot;hello&quot;</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>reply</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>首先是通过rpc.Dial拨号RPC服务，然后通过client.Call调用具体的RPC方法。在调用client.Call时，第一个参数是用点号链接的RPC服务名字和方法名字，第二和第三个参数分别我们定义RPC方法的两个参数。</p> <h2 id=hello-world>重构 Hello World<a class=headerlink href=#hello-world title="Permanent link">&para;</a></h2> <p>一般RPC开发会先定义接口规范，再定义两端的具体操作。</p> <p>RPC服务的接口规范分为三个部分：首先是服务的名字，然后是服务要实现的详细方法列表，最后是注册该类型服务的函数。为了避免名字冲突，我们在RPC服务的名字中增加了包路径前缀（这个是RPC服务抽象的包路径，并非完全等价Go语言的包路径）。RegisterHelloService注册服务时，编译器会要求传入的对象满足HelloServiceInterface接口。</p> <p>服务的名字和接口：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>HelloServiceClient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>rpc</span><span class=p>.</span><span class=nx>Client</span>
+<span class=p>}</span>
+
+<span class=kd>var</span> <span class=nx>_</span> <span class=nx>HelloServiceInterface</span> <span class=p>=</span> <span class=p>(</span><span class=o>*</span><span class=nx>HelloServiceClient</span><span class=p>)(</span><span class=kc>nil</span><span class=p>)</span>
+
+<span class=kd>func</span> <span class=nx>DialHelloService</span><span class=p>(</span><span class=nx>network</span><span class=p>,</span> <span class=nx>address</span> <span class=kt>string</span><span class=p>)</span> <span class=p>(</span><span class=o>*</span><span class=nx>HelloServiceClient</span><span class=p>,</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>c</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>Dial</span><span class=p>(</span><span class=nx>network</span><span class=p>,</span> <span class=nx>address</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>nil</span><span class=p>,</span> <span class=nx>err</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=o>&amp;</span><span class=nx>HelloServiceClient</span><span class=p>{</span><span class=nx>Client</span><span class=p>:</span> <span class=nx>c</span><span class=p>},</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>HelloServiceClient</span><span class=p>)</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>request</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>string</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nx>p</span><span class=p>.</span><span class=nx>Client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=nx>HelloServiceName</span><span class=o>+</span><span class=s>&quot;.Hello&quot;</span><span class=p>,</span> <span class=nx>request</span><span class=p>,</span> <span class=nx>reply</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>客户端代码：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>client</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>DialHelloService</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;localhost:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;dialing:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>string</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;hello&quot;</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>服务端代码：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>HelloService</span> <span class=kd>struct</span> <span class=p>{}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>p</span> <span class=o>*</span><span class=nx>HelloService</span><span class=p>)</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>request</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>string</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>reply</span> <span class=p>=</span> <span class=s>&quot;hello:&quot;</span> <span class=o>+</span> <span class=nx>request</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>RegisterHelloService</span><span class=p>(</span><span class=nb>new</span><span class=p>(</span><span class=nx>HelloService</span><span class=p>))</span>
+
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>Listen</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenTCP error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;Accept error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+        <span class=p>}</span>
+
+        <span class=k>go</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>ServeConn</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>在新的RPC服务端实现中，我们用RegisterHelloService函数来注册函数，这样不仅可以避免命名服务名称的工作，同时也保证了传入的服务对象满足了RPC接口的定义。最后我们新的服务改为支持多个TCP链接，然后为每个TCP链接提供RPC服务。</p> <h2 id=_1>语言无关<a class=headerlink href=#_1 title="Permanent link">&para;</a></h2> <p>语言无关是指：无论采用何种编程语言，只要遵循同样的json结构，以同样的流程就可以和Go语言编写的RPC服务进行通信。这样我们就实现了语言无关的RPC。</p> <p>标准库的RPC默认采用Go语言特有的gob编码，因此从其它语言调用Go语言实现的RPC服务将比较困难，而每个RPC以及服务的使用者都可能采用不同的编程语言。得益于RPC的框架设计，Go语言的RPC其实也是很容易实现跨语言支持的。</p> <p>Go语言的RPC框架有两个比较有特色的设计：</p> <ol> <li>RPC数据打包时可以通过插件实现自定义的编码和解码。</li> <li>RPC建立在抽象的io.ReadWriteCloser接口之上的，我们可以将RPC架设在不同的通讯协议之上。</li> </ol> <p>举个🌰，这里我们将尝试通过官方自带的net/rpc/jsonrpc扩展实现一个跨语言的RPC。</p> <p>基于JSON编码重新实现RPC服务端：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>RegisterName</span><span class=p>(</span><span class=s>&quot;HelloService&quot;</span><span class=p>,</span> <span class=nb>new</span><span class=p>(</span><span class=nx>HelloService</span><span class=p>))</span>
+
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>Listen</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;ListenTCP error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;Accept error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+        <span class=p>}</span>
+
+        <span class=k>go</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>ServeCodec</span><span class=p>(</span><span class=nx>jsonrpc</span><span class=p>.</span><span class=nx>NewServerCodec</span><span class=p>(</span><span class=nx>conn</span><span class=p>))</span>  <span class=c1>// 取代了rpc.ServeConn函数</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>代码中最大的变化是用rpc.ServeCodec函数替代了rpc.ServeConn函数，传入的参数是针对服务端的json编解码器。</p> <p>JSON版本的客户端：</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>Dial</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;localhost:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;net.Dial:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=nx>client</span> <span class=o>:=</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>NewClientWithCodec</span><span class=p>(</span><span class=nx>jsonrpc</span><span class=p>.</span><span class=nx>NewClientCodec</span><span class=p>(</span><span class=nx>conn</span><span class=p>))</span>
+
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>string</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;HelloService.Hello&quot;</span><span class=p>,</span> <span class=s>&quot;hello&quot;</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>reply</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>先手工调用net.Dial函数建立TCP链接，然后基于该链接建立针对客户端的json编解码器。</p> <p>在确保客户端可以正常调用RPC服务的方法之后，我们在客户端用一个普通的TCP服务代替Go语言版本的RPC服务，这样可以查看客户端调用时发送的数据格式。比如在客户端通过nc命令<code>nc -l 1234</code>在同样的端口启动一个TCP服务。然后再次执行一次RPC调用将会发现nc输出了以下的信息：</p> <div class=highlight><pre><span></span><code><span class=p>{</span><span class=nt>&quot;method&quot;</span><span class=p>:</span><span class=s2>&quot;HelloService.Hello&quot;</span><span class=p>,</span><span class=nt>&quot;params&quot;</span><span class=p>:[</span><span class=s2>&quot;hello&quot;</span><span class=p>],</span><span class=nt>&quot;id&quot;</span><span class=p>:</span><span class=mi>0</span><span class=p>}</span>
+</code></pre></div> <p>method部分对应要调用的rpc服务和方法组合成的名字，params部分的第一个元素为参数，id是由调用端维护的一个唯一的调用编号。</p> <p>请求的json数据对象在内部对应两个结构体：客户端是clientRequest，服务端是serverRequest。clientRequest和serverRequest结构体的内容基本是一致的：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>clientRequest</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Method</span> <span class=kt>string</span>         <span class=s>`json:&quot;method&quot;`</span>
+    <span class=nx>Params</span> <span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=kd>interface</span><span class=p>{}</span> <span class=s>`json:&quot;params&quot;`</span>
+    <span class=nx>Id</span>     <span class=kt>uint64</span>         <span class=s>`json:&quot;id&quot;`</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>serverRequest</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Method</span> <span class=kt>string</span>           <span class=s>`json:&quot;method&quot;`</span>
+    <span class=nx>Params</span> <span class=o>*</span><span class=nx>json</span><span class=p>.</span><span class=nx>RawMessage</span> <span class=s>`json:&quot;params&quot;`</span>
+    <span class=nx>Id</span>     <span class=o>*</span><span class=nx>json</span><span class=p>.</span><span class=nx>RawMessage</span> <span class=s>`json:&quot;id&quot;`</span>
+<span class=p>}</span>
+</code></pre></div> <p>在获取到RPC调用对应的json数据后，我们可以通过直接向架设了RPC服务的TCP服务器发送json数据模拟RPC方法调用：</p> <div class=highlight><pre><span></span><code>$ <span class=nb>echo</span> -e <span class=s1>&#39;{&quot;method&quot;:&quot;HelloService.Hello&quot;,&quot;params&quot;:[&quot;hello&quot;],&quot;id&quot;:1}&#39;</span> <span class=p>|</span> nc localhost <span class=m>1234</span>
+</code></pre></div> <p>返回的结果也是一个json格式的数据：</p> <div class=highlight><pre><span></span><code><span class=p>{</span><span class=nt>&quot;id&quot;</span><span class=p>:</span><span class=mi>1</span><span class=p>,</span><span class=nt>&quot;result&quot;</span><span class=p>:</span><span class=s2>&quot;hello:hello&quot;</span><span class=p>,</span><span class=nt>&quot;error&quot;</span><span class=p>:</span><span class=kc>null</span><span class=p>}</span>
+</code></pre></div> <p>其中id对应输入的id参数，result为返回的结果，error部分在出问题时表示错误信息。对于顺序调用来说，id不是必须的。但是Go语言的RPC框架支持异步调用，当返回结果的顺序和调用的顺序不一致时，可以通过id来识别对应的调用。</p> <p>返回的json数据也是对应内部的两个结构体：客户端是clientResponse，服务端是serverResponse。两个结构体的内容同样也是类似的：</p> <div class=highlight><pre><span></span><code><span class=kd>type</span> <span class=nx>clientResponse</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Id</span>     <span class=kt>uint64</span>           <span class=s>`json:&quot;id&quot;`</span>
+    <span class=nx>Result</span> <span class=o>*</span><span class=nx>json</span><span class=p>.</span><span class=nx>RawMessage</span> <span class=s>`json:&quot;result&quot;`</span>
+    <span class=nx>Error</span>  <span class=kd>interface</span><span class=p>{}</span>      <span class=s>`json:&quot;error&quot;`</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>serverResponse</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Id</span>     <span class=o>*</span><span class=nx>json</span><span class=p>.</span><span class=nx>RawMessage</span> <span class=s>`json:&quot;id&quot;`</span>
+    <span class=nx>Result</span> <span class=kd>interface</span><span class=p>{}</span>      <span class=s>`json:&quot;result&quot;`</span>
+    <span class=nx>Error</span>  <span class=kd>interface</span><span class=p>{}</span>      <span class=s>`json:&quot;error&quot;`</span>
+<span class=p>}</span>
+</code></pre></div> <h2 id=httprpc>Http上的RPC<a class=headerlink href=#httprpc title="Permanent link">&para;</a></h2> <p>Go语言内在的 RPC 框架已经支持在 Http 协议上提供 RPC 服务。但是框架的 http 服务同样采用了内置的 gob 协议，并且没有提供采用其它协议的接口，因此从其它语言依然无法访问的。</p> <p>举个🌰</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>RegisterName</span><span class=p>(</span><span class=s>&quot;HelloService&quot;</span><span class=p>,</span> <span class=nb>new</span><span class=p>(</span><span class=nx>HelloService</span><span class=p>))</span>
+
+    <span class=nx>http</span><span class=p>.</span><span class=nx>HandleFunc</span><span class=p>(</span><span class=s>&quot;/jsonrpc&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>,</span> <span class=nx>r</span> <span class=o>*</span><span class=nx>http</span><span class=p>.</span><span class=nx>Request</span><span class=p>)</span> <span class=p>{</span>
+        <span class=kd>var</span> <span class=nx>conn</span> <span class=nx>io</span><span class=p>.</span><span class=nx>ReadWriteCloser</span> <span class=p>=</span> <span class=kd>struct</span> <span class=p>{</span>
+            <span class=nx>io</span><span class=p>.</span><span class=nx>Writer</span>
+            <span class=nx>io</span><span class=p>.</span><span class=nx>ReadCloser</span>
+        <span class=p>}{</span>
+            <span class=nx>ReadCloser</span><span class=p>:</span> <span class=nx>r</span><span class=p>.</span><span class=nx>Body</span><span class=p>,</span>
+            <span class=nx>Writer</span><span class=p>:</span>     <span class=nx>w</span><span class=p>,</span>
+        <span class=p>}</span>
+
+        <span class=nx>rpc</span><span class=p>.</span><span class=nx>ServeRequest</span><span class=p>(</span><span class=nx>jsonrpc</span><span class=p>.</span><span class=nx>NewServerCodec</span><span class=p>(</span><span class=nx>conn</span><span class=p>))</span>
+    <span class=p>})</span>
+
+    <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;:1234&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div> <p>RPC 的服务架设在 “/jsonrpc” 路径，在处理函数中基于 http.ResponseWriter 和 http.Request 类型的参数构造一个 io.ReadWriteCloser 类型的 conn 通道。然后基于 conn 构建针对服务端的 json 编码解码器。最后通过 rpc.ServeRequest 函数为每次请求处理一次 RPC 方法调用。</p> <p>模拟一次RPC调用的过程就是向该链接发送一个 json 字符串：</p> <div class=highlight><pre><span></span><code>$ curl localhost:1234/jsonrpc -X POST <span class=se>\</span>
+    --data <span class=s1>&#39;{&quot;method&quot;:&quot;HelloService.Hello&quot;,&quot;params&quot;:[&quot;hello&quot;],&quot;id&quot;:0}&#39;</span>
+</code></pre></div> <p>返回的结果依然是 json 字符串：</p> <div class=highlight><pre><span></span><code><span class=p>{</span><span class=nt>&quot;id&quot;</span><span class=p>:</span><span class=mi>0</span><span class=p>,</span><span class=nt>&quot;result&quot;</span><span class=p>:</span><span class=s2>&quot;hello:hello&quot;</span><span class=p>,</span><span class=nt>&quot;error&quot;</span><span class=p>:</span><span class=kc>null</span><span class=p>}</span>
+</code></pre></div> <h2 id=rpc>更多 RPC 示例<a class=headerlink href=#rpc title="Permanent link">&para;</a></h2> <h3 id=http-rpc>HTTP RPC<a class=headerlink href=#http-rpc title="Permanent link">&para;</a></h3> <p>服务端：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;errors&quot;</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net/http&quot;</span>
+    <span class=s>&quot;net/rpc&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Arith</span> <span class=kt>int</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Multiply</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>int</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>reply</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>*</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Divide</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>quo</span> <span class=o>*</span><span class=nx>Quotient</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>errors</span><span class=p>.</span><span class=nx>New</span><span class=p>(</span><span class=s>&quot;divide by zero&quot;</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Quo</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>/</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Rem</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>%</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+
+    <span class=nx>arith</span> <span class=o>:=</span> <span class=nb>new</span><span class=p>(</span><span class=nx>Arith</span><span class=p>)</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>Register</span><span class=p>(</span><span class=nx>arith</span><span class=p>)</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>HandleHTTP</span><span class=p>()</span>
+
+    <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ListenAndServe</span><span class=p>(</span><span class=s>&quot;:1234&quot;</span><span class=p>,</span> <span class=kc>nil</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>我们注册了一个 Arith 的 RPC 服务，然后通过<code>rpc.HandleHTTP</code>函数把该服务注册到了 HTTP 协议上，就可以利用 http 的方式来传递数据了。</p> <p>客户端：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/rpc&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Usage: &quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=s>&quot;server&quot;</span><span class=p>)</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>serverAddress</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+
+    <span class=nx>client</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>DialHTTP</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>serverAddress</span><span class=o>+</span><span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;dialing:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=c1>// Synchronous call</span>
+    <span class=nx>args</span> <span class=o>:=</span> <span class=nx>Args</span><span class=p>{</span><span class=mi>17</span><span class=p>,</span> <span class=mi>8</span><span class=p>}</span>
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>int</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Multiply&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d*%d=%d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>reply</span><span class=p>)</span>
+
+    <span class=kd>var</span> <span class=nx>quot</span> <span class=nx>Quotient</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Divide&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>quot</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d/%d=%d remainder %d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Quo</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Rem</span><span class=p>)</span>
+
+<span class=p>}</span>
+</code></pre></div> <p>把上面的服务端和客户端的代码分别编译，然后先把服务端开启，然后开启客户端，输入代码，就会输出如下信息：</p> <div class=highlight><pre><span></span><code>$ ./http_c localhost
+Arith: <span class=m>17</span>*8<span class=o>=</span><span class=m>136</span>
+Arith: <span class=m>17</span>/8<span class=o>=</span><span class=m>2</span> remainder <span class=m>1</span>
+</code></pre></div> <p>通过上面的调用可以看到参数和返回值是自定义的 struct 类型，在服务端把它们当做调用函数的参数的类型，在客户端作为<code>client.Call</code>的第2，3两个参数的类型。客户端的 Call 函数有3个参数，第1个要调用的函数的名字，第2个是要传递的参数，第3个要返回的参数(注意是指针类型)。</p> <h3 id=tcp-rpc>TCP RPC<a class=headerlink href=#tcp-rpc title="Permanent link">&para;</a></h3> <p>服务端：</p> <p>这个代码和 http 的服务器相比，不同在于采用了 TCP 协议，需要自己控制连接，当有客户端连接上来后，我们需要把这个连接交给 rpc 来处理。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;errors&quot;</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;net/rpc&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Arith</span> <span class=kt>int</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Multiply</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>int</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>reply</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>*</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Divide</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>quo</span> <span class=o>*</span><span class=nx>Quotient</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>errors</span><span class=p>.</span><span class=nx>New</span><span class=p>(</span><span class=s>&quot;divide by zero&quot;</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Quo</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>/</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Rem</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>%</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+
+    <span class=nx>arith</span> <span class=o>:=</span> <span class=nb>new</span><span class=p>(</span><span class=nx>Arith</span><span class=p>)</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>Register</span><span class=p>(</span><span class=nx>arith</span><span class=p>)</span>
+
+    <span class=nx>tcpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveTCPAddr</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ListenTCP</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>tcpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=k>continue</span>
+        <span class=p>}</span>
+        <span class=nx>rpc</span><span class=p>.</span><span class=nx>ServeConn</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span>
+    <span class=p>}</span>
+
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Fatal error &quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>客户端：</p> <p>和 http 的客户端代码对比，唯一的区别是用 rpc.Dial 取代了 rpc.DialHTTP，其他处理一模一样。</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/rpc&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Usage: &quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=s>&quot;server:port&quot;</span><span class=p>)</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+
+    <span class=nx>client</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>rpc</span><span class=p>.</span><span class=nx>Dial</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;dialing:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=c1>// Synchronous call</span>
+    <span class=nx>args</span> <span class=o>:=</span> <span class=nx>Args</span><span class=p>{</span><span class=mi>17</span><span class=p>,</span> <span class=mi>8</span><span class=p>}</span>
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>int</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Multiply&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d*%d=%d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>reply</span><span class=p>)</span>
+
+    <span class=kd>var</span> <span class=nx>quot</span> <span class=nx>Quotient</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Divide&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>quot</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d/%d=%d remainder %d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Quo</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Rem</span><span class=p>)</span>
+
+<span class=p>}</span>
+</code></pre></div> <h3 id=json-rpc>JSON RPC<a class=headerlink href=#json-rpc title="Permanent link">&para;</a></h3> <p>JSON RPC是数据编码采用了JSON，而不是gob编码，其他和上面介绍的RPC概念一模一样。详见 <a href=https://golang.org/pkg/net/rpc/jsonrpc/ >jsonrpc包</a></p> <p>json-rpc是基于TCP协议实现的，目前它还不支持HTTP方式。</p> <p>服务端：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;errors&quot;</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;net&quot;</span>
+    <span class=s>&quot;net/rpc&quot;</span>
+    <span class=s>&quot;net/rpc/jsonrpc&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Arith</span> <span class=kt>int</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Multiply</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>reply</span> <span class=o>*</span><span class=kt>int</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=o>*</span><span class=nx>reply</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>*</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>Arith</span><span class=p>)</span> <span class=nx>Divide</span><span class=p>(</span><span class=nx>args</span> <span class=o>*</span><span class=nx>Args</span><span class=p>,</span> <span class=nx>quo</span> <span class=o>*</span><span class=nx>Quotient</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>errors</span><span class=p>.</span><span class=nx>New</span><span class=p>(</span><span class=s>&quot;divide by zero&quot;</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Quo</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>/</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=nx>quo</span><span class=p>.</span><span class=nx>Rem</span> <span class=p>=</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span> <span class=o>%</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span>
+    <span class=k>return</span> <span class=kc>nil</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+
+    <span class=nx>arith</span> <span class=o>:=</span> <span class=nb>new</span><span class=p>(</span><span class=nx>Arith</span><span class=p>)</span>
+    <span class=nx>rpc</span><span class=p>.</span><span class=nx>Register</span><span class=p>(</span><span class=nx>arith</span><span class=p>)</span>
+
+    <span class=nx>tcpAddr</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ResolveTCPAddr</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=s>&quot;:1234&quot;</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+
+    <span class=nx>listener</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>net</span><span class=p>.</span><span class=nx>ListenTCP</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>tcpAddr</span><span class=p>)</span>
+    <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+
+    <span class=k>for</span> <span class=p>{</span>
+        <span class=nx>conn</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>listener</span><span class=p>.</span><span class=nx>Accept</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+            <span class=k>continue</span>
+        <span class=p>}</span>
+        <span class=nx>jsonrpc</span><span class=p>.</span><span class=nx>ServeConn</span><span class=p>(</span><span class=nx>conn</span><span class=p>)</span>
+    <span class=p>}</span>
+
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>checkError</span><span class=p>(</span><span class=nx>err</span> <span class=kt>error</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Fatal error &quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>.</span><span class=nx>Error</span><span class=p>())</span>
+        <span class=nx>os</span><span class=p>.</span><span class=nx>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>客户端：</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+    <span class=s>&quot;fmt&quot;</span>
+    <span class=s>&quot;log&quot;</span>
+    <span class=s>&quot;net/rpc/jsonrpc&quot;</span>
+    <span class=s>&quot;os&quot;</span>
+<span class=p>)</span>
+
+<span class=kd>type</span> <span class=nx>Args</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>A</span><span class=p>,</span> <span class=nx>B</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>type</span> <span class=nx>Quotient</span> <span class=kd>struct</span> <span class=p>{</span>
+    <span class=nx>Quo</span><span class=p>,</span> <span class=nx>Rem</span> <span class=kt>int</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>)</span> <span class=o>!=</span> <span class=mi>2</span> <span class=p>{</span>
+        <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=s>&quot;Usage: &quot;</span><span class=p>,</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=s>&quot;server:port&quot;</span><span class=p>)</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>service</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
+
+    <span class=nx>client</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>jsonrpc</span><span class=p>.</span><span class=nx>Dial</span><span class=p>(</span><span class=s>&quot;tcp&quot;</span><span class=p>,</span> <span class=nx>service</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;dialing:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=c1>// Synchronous call</span>
+    <span class=nx>args</span> <span class=o>:=</span> <span class=nx>Args</span><span class=p>{</span><span class=mi>17</span><span class=p>,</span> <span class=mi>8</span><span class=p>}</span>
+    <span class=kd>var</span> <span class=nx>reply</span> <span class=kt>int</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Multiply&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>reply</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d*%d=%d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>reply</span><span class=p>)</span>
+
+    <span class=kd>var</span> <span class=nx>quot</span> <span class=nx>Quotient</span>
+    <span class=nx>err</span> <span class=p>=</span> <span class=nx>client</span><span class=p>.</span><span class=nx>Call</span><span class=p>(</span><span class=s>&quot;Arith.Divide&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>,</span> <span class=o>&amp;</span><span class=nx>quot</span><span class=p>)</span>
+    <span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+        <span class=nx>log</span><span class=p>.</span><span class=nx>Fatal</span><span class=p>(</span><span class=s>&quot;arith error:&quot;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Printf</span><span class=p>(</span><span class=s>&quot;Arith: %d/%d=%d remainder %d\n&quot;</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>A</span><span class=p>,</span> <span class=nx>args</span><span class=p>.</span><span class=nx>B</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Quo</span><span class=p>,</span> <span class=nx>quot</span><span class=p>.</span><span class=nx>Rem</span><span class=p>)</span>
+
+<span class=p>}</span>
+</code></pre></div> <hr> <div class=md-source-date> <small> Last update: May 16, 2020 </small> </div> </article> </div> </div> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <script src=../../assets/javascripts/vendor.22b62ea4.min.js></script> <script src=../../assets/javascripts/bundle.5f27aba8.min.js></script><script id=__lang type=application/json>{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script> <script>
+        app = initialize({
+          base: "../..",
+          features: ["instant", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.f6ebf1dc.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script> </body> </html>

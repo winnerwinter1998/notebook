@@ -1,0 +1,210 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.1.2, mkdocs-material-5.1.7"><title>测试驱动开发 - Notes</title><link rel=stylesheet href=../../assets/stylesheets/main.4c7052ca.min.css><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback"><style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style></head> <body dir=ltr> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#_1 class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid" aria-label=Header> <a href=../.. title=Notes class="md-header-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> <label class="md-header-nav__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header-nav__title data-md-component=header-title> <div class=md-header-nav__ellipsis> <span class="md-header-nav__topic md-ellipsis"> Notes </span> <span class="md-header-nav__topic md-ellipsis"> 测试驱动开发 </span> </div> </div> <label class="md-header-nav__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query data-md-state=active> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <button type=reset class="md-search__icon md-icon" aria-label=Clear data-md-component=search-reset tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class="md-tabs__link md-tabs__link--active"> Home </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title=Notes class="md-nav__button md-logo" aria-label=Notes> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg> </a> Notes </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. title=Home class=md-nav__link> Home </a> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#hello-world class=md-nav__link> Hello World 示例 </a> </li> <li class=md-nav__item> <a href=#hello-world_1 class=md-nav__link> 测试 Hello World 示例 </a> </li> <li class=md-nav__item> <a href=#_2 class=md-nav__link> 编写测试程序的规则 </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> 测试驱动开发 </a> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> 满足更多需求 </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1 id=_1>测试驱动开发<a class=headerlink href=#_1 title="Permanent link">&para;</a></h1> <p><a href=https://studygolang.gitbook.io/learn-go-with-tests/ >原文链接</a></p> <h2 id=hello-world>Hello World 示例<a class=headerlink href=#hello-world title="Permanent link">&para;</a></h2> <p>hello.go</p> <p><div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>()</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=s>&quot;Hello, world&quot;</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>Hello</span><span class=p>())</span>
+<span class=p>}</span>
+</code></pre></div> 运行它 <div class=highlight><pre><span></span><code>go run hello.go  <span class=c1># hello world</span>
+
+go bulid hello.go  <span class=c1># 编译生成二进制文件</span>
+ls      <span class=c1># hello hello.go</span>
+
+./hello  <span class=c1># Hello world</span>
+</code></pre></div></p> <h2 id=hello-world_1>测试 Hello World 示例<a class=headerlink href=#hello-world_1 title="Permanent link">&para;</a></h2> <p>为了更容易测试，我们把问题拆分开。 </p> <blockquote> <p>将你「领域」内的代码和外界（会引起副作用）分离开会更好。<code>fmt.Println</code> 会产生副作用（打印到标准输出），我们发送的字符串在自己的领域内。</p> </blockquote> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;fmt&quot;</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>()</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=s>&quot;Hello, world&quot;</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>Hello</span><span class=p>())</span>
+<span class=p>}</span>
+</code></pre></div> <p>这次我们在定义中添加了另一个关键字 <code>string</code>。这意味着这个函数将返回一个字符串。 </p> <p>现在创建一个 <code>hello_test.go</code> 的新文件，来为 <code>Hello</code> 函数编写测试。 </p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;testing&quot;</span>
+
+<span class=kd>func</span> <span class=nx>TestHello</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>go</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>()</span>
+    <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, world&quot;</span>
+
+    <span class=k>if</span> <span class=nx>got</span> <span class=o>!=</span> <span class=nx>want</span> <span class=p>{</span>
+        <span class=nx>t</span><span class=p>.</span><span class=nx>Errorf</span><span class=p>(</span><span class=s>&quot;got &#39;%q&#39; want &#39;%q&#39;&quot;</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>运行测试</p> <div class=highlight><pre><span></span><code>go <span class=nb>test</span>
+</code></pre></div> <h2 id=_2>编写测试程序的规则<a class=headerlink href=#_2 title="Permanent link">&para;</a></h2> <p>编写测试和函数很类似，其中有一些规则</p> <ul> <li>程序需要在一个名为 <code>xxx_test.go</code> 的文件中编写</li> <li>测试函数的命名必须以单词 <code>Test</code> 开始</li> <li>测试函数只接受一个参数 <code>t *testing.T</code></li> </ul> <p>类型为 <code>*testing.T</code> 的变量 <code>t</code> 是你在测试框架中的 hook（钩子），所以当你想让测试失败时可以执行 <code>t.Fail()</code> 之类的操作。</p> <p><code>t.Errorf</code> 的用法：我们调用 <code>t</code> 的 <code>Errorf</code> 方法打印一条消息并使测试失败。<code>f</code> 表示格式化，它允许我们构建一个字符串，并将值插入占位符值 <code>%q</code> 中。当你的测试失败时，它能够让你清楚是什么错误导致的。</p> <h2 id=_3>测试驱动开发<a class=headerlink href=#_3 title="Permanent link">&para;</a></h2> <p>从在测试中捕获这些需求开始。</p> <ol> <li> <p>编写一个测试</p> </li> <li> <p>让编译通过</p> </li> <li> <p>运行测试，查看失败原因并检查错误消息是很有意义的</p> </li> <li> <p>编写足够的代码以使测试通过</p> </li> <li> <p>重构</p> </li> </ol> <p><strong>以 Hello World 为例。</strong></p> <p>下一个需求是指定问候的接受者。</p> <p>先写测试程序</p> <div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=s>&quot;testing&quot;</span>
+
+<span class=kd>func</span> <span class=nx>TestHello</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;Chris&quot;</span><span class=p>)</span>
+    <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, Chris&quot;</span>
+
+    <span class=k>if</span> <span class=nx>got</span> <span class=o>!=</span> <span class=nx>want</span> <span class=p>{</span>
+        <span class=nx>t</span><span class=p>.</span><span class=nx>Errorf</span><span class=p>(</span><span class=s>&quot;got &#39;%q&#39; want &#39;%q&#39;&quot;</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div> <p>这时运行 <code>go test</code> 将得到如下错误</p> <div class=highlight><pre><span></span><code>./hello_test.go:6:18: too many arguments in call to Hello
+    have (string)
+    want ()
+</code></pre></div> <p>在这种情况下，编译器告诉你需要怎么做才能继续。我们必须修改函数 <code>Hello</code> 来接受一个参数。</p> <p>修改 <code>Hello</code> 函数以接受字符串类型的参数</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=s>&quot;Hello, world&quot;</span>
+<span class=p>}</span>
+</code></pre></div> <p>尝试再次运行测试 <code>go test</code> ，<code>main.go</code> 会编译失败，因为没有传递参数。</p> <p>传入参数「world」让它通过。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nx>fmt</span><span class=p>.</span><span class=nx>Println</span><span class=p>(</span><span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;world&quot;</span><span class=p>))</span>
+<span class=p>}</span>
+</code></pre></div> <p>再次运行测试 <code>go test</code>，将得到如下错误</p> <div class=highlight><pre><span></span><code><span class=nx>hello_test</span><span class=p>.</span><span class=k>go</span><span class=p>:</span><span class=mi>10</span><span class=p>:</span> <span class=nx>got</span> <span class=err>&#39;</span><span class=nx>Hello</span><span class=p>,</span> <span class=nx>world</span><span class=err>&#39;</span> <span class=nx>want</span> <span class=err>&#39;</span><span class=nx>Hello</span><span class=p>,</span> <span class=nx>Chris</span><span class=err>&#39;&#39;</span>
+</code></pre></div> <p>为了使测试通过，我们使用 <code>name</code> 参数并用 <code>Hello，</code> 字符串连接它</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=s>&quot;Hello, &quot;</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+</code></pre></div> <p>现在再运行测试就通过了。通常作为 TDD 周期的一部分，我们该着手 <em>重构</em> 了。</p> <p>开始重构代码。</p> <p>常量可以提高应用程序的性能，它避免了每次使用 <code>Hello</code> 时创建 <code>"Hello, "</code> 字符串实例。</p> <div class=highlight><pre><span></span><code><span class=kd>const</span> <span class=nx>englishHelloPrefix</span> <span class=p>=</span> <span class=s>&quot;Hello, &quot;</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nx>englishHelloPrefix</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+</code></pre></div> <p>重构之后，重新测试以确保程序无误。</p> <p>下一个需求是当我们的函数用空字符串调用时，它默认为打印 "Hello, World" 而不是 "Hello,"</p> <p>首先编写一个新的失败测试</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>TestHello</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+
+    <span class=nx>t</span><span class=p>.</span><span class=nx>Run</span><span class=p>(</span><span class=s>&quot;saying hello to people&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;Chris&quot;</span><span class=p>)</span>
+        <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, Chris&quot;</span>
+
+        <span class=k>if</span> <span class=nx>got</span> <span class=o>!=</span> <span class=nx>want</span> <span class=p>{</span>
+            <span class=nx>t</span><span class=p>.</span><span class=nx>Errorf</span><span class=p>(</span><span class=s>&quot;got &#39;%q&#39; want &#39;%q&#39;&quot;</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>})</span>
+
+    <span class=nx>t</span><span class=p>.</span><span class=nx>Run</span><span class=p>(</span><span class=s>&quot;say hello world when an empty string is supplied&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;&quot;</span><span class=p>)</span>
+        <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, World&quot;</span>
+
+        <span class=k>if</span> <span class=nx>got</span> <span class=o>!=</span> <span class=nx>want</span> <span class=p>{</span>
+            <span class=nx>t</span><span class=p>.</span><span class=nx>Errorf</span><span class=p>(</span><span class=s>&quot;got &#39;%q&#39; want &#39;%q&#39;&quot;</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>})</span>
+
+<span class=p>}</span>
+</code></pre></div> <p>重构测试代码。</p> <p>将断言重构为函数。这减少了重复并且提高了测试的可读性。在函数中声明函数并将它们分配给变量，可以像调用普通函数一样调用它们。<code>t.Helper()</code> 需要告诉测试套件这个方法是辅助函数（helper）。通过这样做，当测试失败时所报告的行号将在函数调用中而不是在辅助函数内部。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>TestHello</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+
+    <span class=nx>assertCorrectMessage</span> <span class=o>:=</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>t</span><span class=p>.</span><span class=nx>Helper</span><span class=p>()</span>
+        <span class=k>if</span> <span class=nx>got</span> <span class=o>!=</span> <span class=nx>want</span> <span class=p>{</span>
+            <span class=nx>t</span><span class=p>.</span><span class=nx>Errorf</span><span class=p>(</span><span class=s>&quot;got &#39;%q&#39; want &#39;%q&#39;&quot;</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+        <span class=p>}</span>
+    <span class=p>}</span>
+
+    <span class=nx>t</span><span class=p>.</span><span class=nx>Run</span><span class=p>(</span><span class=s>&quot;saying hello to people&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;Chris&quot;</span><span class=p>)</span>
+        <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, Chris&quot;</span>
+        <span class=nx>assertCorrectMessage</span><span class=p>(</span><span class=nx>t</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+    <span class=p>})</span>
+
+    <span class=nx>t</span><span class=p>.</span><span class=nx>Run</span><span class=p>(</span><span class=s>&quot;empty string defaults to &#39;world&#39;&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;&quot;</span><span class=p>)</span>
+        <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hello, World&quot;</span>
+        <span class=nx>assertCorrectMessage</span><span class=p>(</span><span class=nx>t</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+    <span class=p>})</span>
+
+<span class=p>}</span>
+</code></pre></div> <p>改写业务代码。</p> <div class=highlight><pre><span></span><code><span class=kd>const</span> <span class=nx>englishHelloPrefix</span> <span class=p>=</span> <span class=s>&quot;Hello, &quot;</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>name</span> <span class=o>==</span> <span class=s>&quot;&quot;</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;World&quot;</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>englishHelloPrefix</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+</code></pre></div> <p>如果我们运行测试，应该看到它满足了新的要求。</p> <h2 id=_4>满足更多需求<a class=headerlink href=#_4 title="Permanent link">&para;</a></h2> <blockquote> <p>这个内容复习不看也行。反正跟前面差不多了。</p> </blockquote> <p>现在需要支持第二个参数，指定问候的语言。如果一种不能识别的语言被传进来，就默认为英语。</p> <p>为使用西班牙语的用户编写测试，将其添加到现有的测试用例中。</p> <div class=highlight><pre><span></span><code>    <span class=nx>t</span><span class=p>.</span><span class=nx>Run</span><span class=p>(</span><span class=s>&quot;in Spanish&quot;</span><span class=p>,</span> <span class=kd>func</span><span class=p>(</span><span class=nx>t</span> <span class=o>*</span><span class=nx>testing</span><span class=p>.</span><span class=nx>T</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>got</span> <span class=o>:=</span> <span class=nx>Hello</span><span class=p>(</span><span class=s>&quot;Elodie&quot;</span><span class=p>,</span> <span class=s>&quot;Spanish&quot;</span><span class=p>)</span>
+        <span class=nx>want</span> <span class=o>:=</span> <span class=s>&quot;Hola, Elodie&quot;</span>
+        <span class=nx>assertCorrectMessage</span><span class=p>(</span><span class=nx>t</span><span class=p>,</span> <span class=nx>got</span><span class=p>,</span> <span class=nx>want</span><span class=p>)</span>
+    <span class=p>})</span>
+</code></pre></div> <p>运行测试，编译器会报错，因为用了两个参数而不是一个来调用 <code>Hello</code>。</p> <div class=highlight><pre><span></span><code><span class=p>.</span><span class=o>/</span><span class=nx>hello_test</span><span class=p>.</span><span class=k>go</span><span class=p>:</span><span class=mi>27</span><span class=p>:</span><span class=mi>19</span><span class=p>:</span> <span class=nx>too</span> <span class=nx>many</span> <span class=nx>arguments</span> <span class=nx>in</span> <span class=nx>call</span> <span class=nx>to</span> <span class=nx>Hello</span>
+    <span class=nx>have</span> <span class=p>(</span><span class=kt>string</span><span class=p>,</span> <span class=kt>string</span><span class=p>)</span>
+    <span class=nx>want</span> <span class=p>(</span><span class=kt>string</span><span class=p>)</span>
+</code></pre></div> <p>通过向 <code>Hello</code> 添加另一个字符串参数来解决编译问题。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>language</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=s>&quot;&quot;</span> <span class=o>==</span> <span class=nx>name</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;World&quot;</span> 
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=nx>englishHelloPrefix</span> <span class=o>+</span> <span class=nx>name</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></div> <p>再次运行测试时，它会报错在其他测试和 <code>hello.go</code> 中没有传递足够的参数给 <code>Hello</code> 函数</p> <div class=highlight><pre><span></span><code>./hello.go:15:19: not enough arguments in call to Hello
+    have (string)
+    want (string, string)
+</code></pre></div> <p>通过传递空字符串来解决它们。现在，除了新场景外，所有测试都应该编译并通过</p> <div class=highlight><pre><span></span><code>hello_test.go:29: got &#39;Hello, Elodie&#39; want &#39;Hola, Elodie&#39;
+</code></pre></div> <p>使用 <code>if</code> 检查语言是否是「西班牙语」，如果是就修改信息</p> <div class=highlight><pre><span></span><code>func Hello(name string, language string) string {
+    if &quot;&quot; == name {
+        name = &quot;World&quot;
+    }
+
+    if &quot;Spanish&quot; == language {
+        return &quot;Hola, &quot; + name
+    }
+
+    return englishHelloPrefix + name
+}
+</code></pre></div> <p>测试通过。</p> <p>重构代码。</p> <div class=highlight><pre><span></span><code><span class=kd>const</span> <span class=nx>spanish</span> <span class=p>=</span> <span class=s>&quot;Spanish&quot;</span>
+<span class=kd>const</span> <span class=nx>helloPrefix</span> <span class=p>=</span> <span class=s>&quot;Hello, &quot;</span>
+<span class=kd>const</span> <span class=nx>spanishHelloPrefix</span> <span class=p>=</span> <span class=s>&quot;Hola, &quot;</span>
+
+<span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>language</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=s>&quot;&quot;</span> <span class=p>=</span> <span class=nx>name</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;World&quot;</span>
+    <span class=p>}</span>
+
+    <span class=k>if</span> <span class=nx>language</span> <span class=o>==</span> <span class=nx>spanish</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>spanishHelloPrefix</span> <span class=o>+</span> <span class=nx>name</span>
+    <span class=p>}</span>
+
+    <span class=k>return</span> <span class=nx>engglishHelloPrefix</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+</code></pre></div> <p>再加个法语吧。</p> <p>直接上业务代码</p> <blockquote> <p>TDD 真是太麻烦了 （ x </p> <p>悄悄不写测试。问就是忘了写。</p> </blockquote> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>language</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>name</span> <span class=o>==</span> <span class=s>&quot;&quot;</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;World&quot;</span>
+    <span class=p>}</span>
+
+    <span class=nx>prefix</span> <span class=o>:=</span> <span class=nx>englishHelloPrefix</span>
+
+    <span class=k>switch</span> <span class=nx>language</span> <span class=p>{</span>
+    <span class=k>case</span> <span class=nx>french</span><span class=p>:</span>
+        <span class=nx>prefix</span> <span class=p>=</span> <span class=nx>frenchHelloPrefix</span>
+    <span class=k>case</span> <span class=nx>spanish</span><span class=p>:</span>
+        <span class=nx>prefix</span> <span class=p>=</span> <span class=nx>spanishHelloPrefix</span>
+    <span class=p>}</span>
+
+    <span class=k>return</span> <span class=nx>prefix</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+</code></pre></div> <p>重构它。提取一个 greetingPrefix 函数出来。</p> <div class=highlight><pre><span></span><code><span class=kd>func</span> <span class=nx>Hello</span><span class=p>(</span><span class=nx>name</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>language</span> <span class=kt>string</span><span class=p>)</span> <span class=kt>string</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=nx>name</span> <span class=o>==</span> <span class=s>&quot;&quot;</span> <span class=p>{</span>
+        <span class=nx>name</span> <span class=p>=</span> <span class=s>&quot;World&quot;</span>
+    <span class=p>}</span>
+
+    <span class=k>return</span> <span class=nx>greetingPrefix</span><span class=p>(</span><span class=nx>language</span><span class=p>)</span> <span class=o>+</span> <span class=nx>name</span>
+<span class=p>}</span>
+
+<span class=kd>func</span> <span class=nx>greetingPrefix</span><span class=p>(</span><span class=nx>language</span> <span class=kt>string</span><span class=p>)</span> <span class=p>(</span><span class=nx>prefix</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>switch</span> <span class=nx>language</span> <span class=p>{</span>
+    <span class=k>case</span> <span class=nx>french</span><span class=p>:</span>
+        <span class=nx>prefix</span> <span class=p>=</span> <span class=nx>frenchHelloPrefix</span>
+    <span class=k>case</span> <span class=nx>spanish</span><span class=p>:</span>
+        <span class=nx>prefix</span> <span class=p>=</span> <span class=nx>spanishHelloPrefix</span>
+    <span class=k>default</span><span class=p>:</span>
+        <span class=nx>prefix</span> <span class=p>=</span> <span class=nx>englishHelloPrefix</span>
+    <span class=p>}</span>
+    <span class=k>return</span>
+<span class=p>}</span>
+</code></pre></div> <hr> <div class=md-source-date> <small> Last update: May 16, 2020 </small> </div> </article> </div> </div> </main> <footer class=md-footer> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <script src=../../assets/javascripts/vendor.22b62ea4.min.js></script> <script src=../../assets/javascripts/bundle.5f27aba8.min.js></script><script id=__lang type=application/json>{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script> <script>
+        app = initialize({
+          base: "../..",
+          features: ["instant", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.f6ebf1dc.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script> </body> </html>
